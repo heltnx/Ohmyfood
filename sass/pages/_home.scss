@@ -31,4 +31,27 @@
         color: $color-white;
       }
     }
+///*****Fonctionement*******
+
+    .fonctionnement {
+      @extend %flex-column;
+      max-width: 500px;
+      margin: 28px auto 65px auto;
+    }
+
+    .nav {
+      align-self: center;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+    
+    .instruction{
+      @include instructions;
+    }
+
+    .store {
+      i {
+        color: $color-primary;
+      }
+    }
   }

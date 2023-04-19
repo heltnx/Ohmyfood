@@ -1,4 +1,4 @@
-.home .headline {
+.home .fonctionnement, .home .headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +37,37 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+
+.instructions {
+  height: 72.38px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 38px 0 10px;
+  margin-bottom: 25px;
+}
+.instructions span {
+  position: relative;
+  left: -25px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+}
+.instructions a {
+  text-align: left;
+  padding-right: 22px;
+}
+.instructions i {
+  font-size: 19px;
+  color: gray;
+  margin-right: 27px;
 }
 
 .header {
@@ -126,5 +157,45 @@ button {
 .home .btn-gradient a {
   color: #ffffff;
 }
-
-/*# sourceMappingURL=style.css.map */
+.home .fonctionnement {
+  max-width: 500px;
+  margin: 28px auto 65px auto;
+}
+.home .nav {
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.home .instruction {
+  height: 72.38px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 38px 0 10px;
+  margin-bottom: 25px;
+}
+.home .instruction span {
+  position: relative;
+  left: -25px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+}
+.home .instruction a {
+  text-align: left;
+  padding-right: 22px;
+}
+.home .instruction i {
+  font-size: 19px;
+  color: gray;
+  margin-right: 27px;
+}
+.home .store i {
+  color: #9356DC;
+}/*# sourceMappingURL=style.css.map */
