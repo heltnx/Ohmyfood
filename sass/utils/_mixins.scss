@@ -10,8 +10,6 @@
 
 @mixin btn-gradient() {
     background: linear-gradient(to top, $color-primary, $color-secondary);
-    color: $color-white ;
-    text-decoration: none;
     padding: 15px 20px;
     margin: auto;
     border: none;
