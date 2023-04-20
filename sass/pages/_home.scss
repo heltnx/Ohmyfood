@@ -80,5 +80,7 @@
     
     .card {
       @include card;
+      margin-bottom: 18px;
     }
+    
   }
