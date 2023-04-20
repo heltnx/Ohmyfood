@@ -1,4 +1,4 @@
-.home .fonctionnement, .home .headline {
+.home .card .card, .home .fonctionnement, .home .headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,4 +198,46 @@ button {
 }
 .home .store i {
   color: #9356DC;
-}/*# sourceMappingURL=style.css.map */
+}
+.home .restaurants {
+  background-color: #F7F7F7;
+  padding-top: 54px;
+  padding-bottom: 66px;
+  display: block;
+}
+.home .restaurants img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px 20px 0px 0px;
+}
+.home .restaurants .card-title {
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+.home .restaurants-contain {
+  max-width: 490px;
+  margin: auto;
+}
+.home .card .card {
+  margin-top: 33px;
+  max-width: 500px;
+}
+.home .card .card-content {
+  background-color: #ffffff;
+  padding-left: 15px;
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: -5px;
+}
+.home .card .card-subtitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 12px;
+}
+.home .card .card-subtittle p {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
