@@ -126,6 +126,14 @@ button {
   background-color: #F7F7F7;
   padding: 30px 5px 57px 5px;
 }
+.home .headline p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  line-height: 21px;
+  margin-bottom: 27px;
+  text-align: center;
+}
 .home h1 {
   font-family: "roboto";
   font-size: 24px;
@@ -133,14 +141,6 @@ button {
   line-height: 28px;
   text-align: center;
   padding: 0 20px;
-}
-.home p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #353535;
-  line-height: 21px;
-  margin-bottom: 27px;
-  text-align: center;
 }
 .home .btn-gradient {
   background: linear-gradient(to top, #9356DC, #FF79DA);
