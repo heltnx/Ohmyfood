@@ -1,0 +1,29 @@
+
+footer {
+	background-color: $bg-grey;
+	width: 100%;
+	ul {
+		padding: 0;
+		list-style: none;
+		line-height: 30px;
+		margin-top: 16px 0 0 0;
+	}
+	a {
+		color: $color-white;
+	}
+
+    .foot-contain {
+        justify-content: space-around;
+        padding: 22px 25px;
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 18px;
+		line-height: 26.24px;
+		color: $color-white;
+        padding-bottom: 16px;
+    }
+
+
+}

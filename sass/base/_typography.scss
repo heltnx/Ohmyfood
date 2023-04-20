@@ -5,7 +5,15 @@ body {
 
 
 button {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family_1;
     font-weight: 500;
     font-size: 16px;
+}
+
+.logo {
+    font-family: $font-family_2;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 43.74px;
+    color: $color-black;
 }

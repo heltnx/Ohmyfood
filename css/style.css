@@ -34,9 +34,17 @@ body {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto";
   font-weight: 500;
   font-size: 16px;
+}
+
+.logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.74px;
+  color: #000000;
 }
 
 .instructions {
@@ -88,14 +96,10 @@ button {
   width: 18px;
   display: none;
 }
-.header span {
+.header .logo {
   padding: 20px 80px;
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 400;
   font-size: 30px;
   line-height: 43.74px;
-  color: #000000;
 }
 
 .location {
@@ -120,6 +124,31 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+  margin-top: 16px 0 0 0;
+}
+footer a {
+  color: #ffffff;
+}
+footer .foot-contain {
+  justify-content: space-around;
+  padding: 22px 25px;
+  width: 100%;
+}
+footer .logo {
+  font-size: 18px;
+  line-height: 26.24px;
+  color: #ffffff;
+  padding-bottom: 16px;
 }
 
 .home .headline {
