@@ -221,7 +221,7 @@ button {
 }
 .home .card .card {
   margin-top: 33px;
-  max-width: 500px;
+  width: 90%;
 }
 .home .card .card-content {
   background-color: #ffffff;

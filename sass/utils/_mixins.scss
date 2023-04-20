@@ -59,7 +59,7 @@
 	.card{
 		@extend %flex-column;
 		margin-top: 33px;
-		max-width: 500px;
+		width: 90%;
 
 		&-content {
 			background-color: $color-white;
