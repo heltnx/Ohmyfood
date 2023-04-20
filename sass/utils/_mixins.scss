@@ -59,7 +59,7 @@
 	.card{
 		@extend %flex-column;
 		margin-top: 33px;
-		width: 90%;
+		
 
 		&-content {
 			background-color: $color-white;
@@ -74,10 +74,11 @@
 			font-size: 17px;
 			font-weight: 300;
 			padding-bottom: 12px;
+			& p{
+				text-align: left;
+			}
 		}
 
-		&-subtittle p{
-			text-align: left;
-		}
+		
 	}
 }

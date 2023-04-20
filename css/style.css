@@ -216,12 +216,12 @@ button {
   margin-bottom: 5px;
 }
 .home .restaurants-contain {
+  width: 90%;
   max-width: 490px;
   margin: auto;
 }
 .home .card .card {
   margin-top: 33px;
-  width: 90%;
 }
 .home .card .card-content {
   background-color: #ffffff;
@@ -236,7 +236,7 @@ button {
   font-weight: 300;
   padding-bottom: 12px;
 }
-.home .card .card-subtittle p {
+.home .card .card-subtitle p {
   text-align: left;
 }
 
