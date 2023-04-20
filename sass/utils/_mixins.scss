@@ -74,7 +74,19 @@
 			& h3 {
 				display: flex;
 				justify-content: space-between;
+				margin-bottom: 5px;
+			}
+			& i {
+				font-weight: 300;
+				font-size: 22px;
 
+				&:hover {
+				font-weight: 900;
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+				background-image: linear-gradient(0deg, $color-secondary -11.44%, $color-primary 123.93%);
+				}
 			}
 		}
 
