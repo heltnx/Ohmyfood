@@ -1,86 +1,88 @@
 .home {
 
-    .headline {
-      @extend %flex-column;
-      background-color: $bg-color;
-      padding: 30px 5px 57px 5px;
+  .headline {
+    @extend %flex-column;
+    background-color: $bg-color;
+    padding: 30px 5px 57px 5px;
 
-      p {
-        font-size: 18px;
-        font-weight: 300;
-        color: $bg-grey;
-        line-height: 21px;
-        margin-bottom: 27px;
-        text-align: center
-      }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      color: $bg-grey;
+      line-height: 21px;
+      margin-bottom: 27px;
+      text-align: center
     }
-  
-    h1 {
-      font-family: $font-family_1;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 28px;
-      text-align: center;
-      padding: 0 20px;
-    }
-  
-    
-  
-    .btn-gradient {
-      @include btn-gradient;
-  
-      a {
-        color: $color-white;
-      }
-    }
-///*****Fonctionement*******
-
-    .fonctionnement {
-      @extend %flex-column;
-      max-width: 500px;
-      margin: 28px auto 65px auto;
-    }
-
-    .nav {
-      align-self: center;
-      margin-top: 10px;
-      margin-left: 5px;
-    }
-    
-    .instruction{
-      @include instructions;
-    }
-
-    .store {
-      i {
-        color: $color-primary;
-      }
-    }
-
-    ///*****restaurants*******
-    
-    .restaurants {
-      background-color: $bg-color;
-      padding-top: 54px;
-      padding-bottom: 66px;
-      display: block;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 220px;
-        border-radius: 20px 20px 0px 0px;
-      }
-    }
-
-    .restaurants-contain {
-      width: 90%;
-      max-width: 490px;
-      margin: auto;
-    }
-    
-    .card {
-      @include card;
-      margin-bottom: 18px;
-    }
-    
   }
+
+  h1 {
+    font-family: $font-family_1;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+
+
+  .btn-gradient {
+    @include btn-gradient;
+
+    a {
+      color: $color-white;
+    }
+  }
+
+  ///*****Fonctionement*******
+
+  .fonctionnement {
+    @extend %flex-column;
+    max-width: 500px;
+    margin: 28px auto 65px auto;
+  }
+
+  .nav {
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .instruction {
+    @include instructions;
+  }
+
+  .store {
+    i {
+      color: $color-primary;
+    }
+  }
+
+  ///*****restaurants*******
+
+  .restaurants {
+    background-color: $bg-color;
+    padding-top: 54px;
+    padding-bottom: 66px;
+    display: block;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 220px;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  .restaurants-contain {
+    width: 90%;
+    max-width: 490px;
+    margin: auto;
+  }
+
+  .card {
+    @include card;
+    margin-bottom: 18px;
+  }
+
+}
