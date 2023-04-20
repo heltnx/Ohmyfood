@@ -211,10 +211,6 @@ button {
   height: 220px;
   border-radius: 20px 20px 0px 0px;
 }
-.home .restaurants .card-title {
-  margin-top: 16px;
-  margin-bottom: 5px;
-}
 .home .restaurants-contain {
   width: 90%;
   max-width: 490px;
@@ -229,6 +225,13 @@ button {
   display: flex;
   border-radius: 0px 0px 20px 20px;
   margin-top: -5px;
+}
+.home .card .card-txt {
+  width: 95%;
+}
+.home .card .card-txt h3 {
+  display: flex;
+  justify-content: space-between;
 }
 .home .card .card-subtitle {
   margin: 0;
