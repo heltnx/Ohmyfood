@@ -38,12 +38,11 @@
 
   .fonctionnement {
     @extend %flex-column;
-    max-width: 500px;
     margin: 28px auto 65px auto;
   }
 
   .nav {
-    align-self: center;
+    width: 1053px;
     margin-top: 10px;
     margin-left: 5px;
   }
@@ -87,3 +86,14 @@
   }
 
 }
+
+///*****Medias queries****///
+
+@include desktop {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
