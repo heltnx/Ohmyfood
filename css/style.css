@@ -147,6 +147,9 @@ footer .logo {
   color: #ffffff;
   padding-bottom: 16px;
 }
+footer i {
+  margin-right: 11px;
+}
 
 .home .headline {
   background-color: #F7F7F7;
@@ -232,8 +235,7 @@ footer .logo {
   display: block;
 }
 .home .restaurants img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 220px;
   border-radius: 20px 20px 0px 0px;
@@ -298,4 +300,6 @@ footer .logo {
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
