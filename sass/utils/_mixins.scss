@@ -53,9 +53,9 @@
 	}
 }
 
+///************cards**********
 @mixin card {
-
-	.card {
+	.card{
 		@extend %flex-column;
 		margin-top: 33px;
 
@@ -66,20 +66,20 @@
 			border-radius: 0px 0px 20px 20px;
 			margin-top: -5px;
 		}
-
+	
 		&-txt {
 			width: 95%;
-
-			& h3 {
+	
+			h3 {
 				display: flex;
 				justify-content: space-between;
 				margin-bottom: 5px;
 			}
-
-			& i {
+	
+			i {
 				font-weight: 300;
 				font-size: 22px;
-
+	
 				&:hover {
 					font-weight: 900;
 					background-clip: text;
@@ -88,17 +88,35 @@
 					background-image: linear-gradient(0deg, $color-secondary -11.44%, $color-primary 123.93%);
 				}
 			}
+	
 			&-subtitle {
 				font-size: 17px;
 				font-weight: 300;
 				padding-bottom: 20px;
 				text-align: left;
 			}
-
-			& p{
+	
+			& p {
 				margin-top: 10px;
 				font-weight: 300;
 			}
 		}
+		&-badge {
+			background-color: $color-terciaire;
+			color: #008766;
+			position: absolute;
+			padding: 7px 10px;
+			right: 10px;
+			top: 20px;
+			border-radius: 2px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+			font-weight: 500;
+			font-size: 14px;
+			text-align: center;
+		}
 	}
+	
 }
+
+
+///----------------------------
