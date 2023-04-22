@@ -15,7 +15,7 @@ footer {
     .foot-contain {
         justify-content: space-around;
         padding: 22px 25px;
-        width: 100%;
+       
     }
 
     .logo{
@@ -33,27 +33,25 @@ footer {
 
 ///**Medias queries***********
 @include desktop {
-	.foot-contain{
-		width: 95%;
-
-		span{
+	footer{
+	span{
 			 
-			position: relative;
-			left: 100px;
-			top: 20px;
-	}
-	}
+		position: relative;
+		left: 100px;
+		top: 20px;
+}
 	.foot-row {
 		display: flex;
 		flex-direction: row-reverse;
 		width: 80%;
 	}
+
 	ul{
 		display: flex;
 		width: 600px;
         justify-content: space-between;
-
 		
 	}
 
   }
+}

@@ -11,6 +11,7 @@ body {
 
 .main-container {
 	@extend %flex-column;
+    width: 100%;
 }
 
 main {

@@ -42,7 +42,6 @@
   }
 
   .nav {
-    width: 1053px;
     margin-top: 10px;
     margin-left: 5px;
   }
@@ -91,6 +90,7 @@
 
 @include desktop {
   .nav {
+    width: 1053px;
     display: flex;
     justify-content: space-between;
   }

@@ -14,6 +14,10 @@ body {
   margin: 0;
 }
 
+.main-container {
+  width: 100%;
+}
+
 main {
   width: 100%;
 }
@@ -130,7 +134,6 @@ footer a {
 footer .foot-contain {
   justify-content: space-around;
   padding: 22px 25px;
-  width: 100%;
 }
 footer .logo {
   font-size: 18px;
@@ -143,20 +146,17 @@ footer i {
 }
 
 @media only screen and (min-width: 1100px) {
-  .foot-contain {
-    width: 95%;
-  }
-  .foot-contain span {
+  footer span {
     position: relative;
     left: 100px;
     top: 20px;
   }
-  .foot-row {
+  footer .foot-row {
     display: flex;
     flex-direction: row-reverse;
     width: 80%;
   }
-  ul {
+  footer ul {
     display: flex;
     width: 600px;
     justify-content: space-between;
@@ -201,7 +201,6 @@ footer i {
   margin: 28px auto 65px auto;
 }
 .home .nav {
-  width: 1053px;
   margin-top: 10px;
   margin-left: 5px;
 }
@@ -315,6 +314,7 @@ footer i {
 
 @media only screen and (min-width: 1100px) {
   .nav {
+    width: 1053px;
     display: flex;
     justify-content: space-between;
   }
