@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+.main-container {
+	@extend %flex-column;
+}
+
 main {
     width: 100%;
 }
