@@ -134,6 +134,7 @@ footer a {
 footer .foot-contain {
   justify-content: space-around;
   padding: 22px 25px;
+  max-width: 1650px;
 }
 footer .logo {
   font-size: 18px;
@@ -243,6 +244,11 @@ footer i {
   padding-bottom: 66px;
   display: block;
 }
+.home .restaurants h2 {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 .home .restaurants img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -252,11 +258,17 @@ footer i {
 }
 .home .restaurants-contain {
   width: 90%;
-  max-width: 490px;
   margin: auto;
+  max-width: 1100px;
+}
+.home .contain-card {
+  margin: 0 auto;
 }
 .home .card {
   margin-bottom: 18px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
   position: relative;
 }
 .home .card .card {
@@ -317,5 +329,22 @@ footer i {
     width: 1053px;
     display: flex;
     justify-content: space-between;
+    margin-left: 0;
+  }
+  h2 {
+    max-width: none !important;
+    margin: 20px !important;
+  }
+  .contain-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px 20px;
+    justify-content: space-between;
+  }
+  .card {
+    width: 46%;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

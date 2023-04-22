@@ -58,7 +58,6 @@
 	.card{
 		@extend %flex-column;
 		margin-top: 33px;
-
 		&-content {
 			background-color: $color-white;
 			padding-left: 15px;
@@ -136,3 +135,4 @@
   }
 }
 
+//*************

@@ -64,6 +64,12 @@
     padding-bottom: 66px;
     display: block;
 
+    h2 {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
     img {
       object-fit: cover;
       width: 100%;
@@ -74,14 +80,23 @@
 
   .restaurants-contain {
     width: 90%;
-    max-width: 490px;
     margin: auto;
+    max-width: 1100px;
+  }
+
+  .contain-card {
+    margin: 0 auto;
+
   }
 
   .card {
     @include card;
     margin-bottom: 18px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
     position: relative;
+
   }
 
 }
@@ -93,7 +108,29 @@
     width: 1053px;
     display: flex;
     justify-content: space-between;
+    margin-left: 0;
   }
+
+
+
+  h2 {
+    max-width: none !important;
+    margin: 20px !important;
+  }
+
+
+  .contain-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 46%;
+    margin: 0;
+  }
+
 }
-
-
