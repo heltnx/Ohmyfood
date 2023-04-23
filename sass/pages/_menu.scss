@@ -8,19 +8,19 @@
     background: $bg-color;
     border-radius: 40px 40px 0px 0px;
     transform: translatey(-40px);
+    
 
     h1 {
         font-size: 28px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
     }
 
     .card-content {
         width: 100%;
         padding: 20px 70px 40px 30px;
         @include card-icon;
-        
     }
 }

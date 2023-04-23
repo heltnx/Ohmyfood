@@ -17,3 +17,14 @@ button {
     line-height: 43.74px;
     color: $color-black;
 }
+
+h2{
+    font-family: $font-family_1;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18.75px;
+    border-bottom: 3px solid $color-terciaire;
+    padding: 10px 0;
+    width: 40px;
+    text-transform: uppercase;
+}

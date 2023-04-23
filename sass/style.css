@@ -51,6 +51,17 @@ button {
   color: #000000;
 }
 
+h2 {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 10px 0;
+  width: 40px;
+  text-transform: uppercase;
+}
+
 .instructions {
   height: 72.38px;
   width: 320px;
@@ -365,7 +376,7 @@ footer i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 .menu .card-content {
   width: 100%;
