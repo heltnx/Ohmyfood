@@ -353,4 +353,12 @@ footer i {
      object-fit: cover;
   width: 100%;
   height: 300px;
+}
+
+.menu {
+  background: #F7F7F7;
+}
+
+h1 {
+  font-size: 28px;
 }/*# sourceMappingURL=style.css.map */
