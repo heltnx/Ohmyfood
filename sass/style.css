@@ -358,7 +358,13 @@ footer i {
 .menu {
   background: #F7F7F7;
 }
-
-h1 {
+.menu h1 {
   font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.menu .card-content {
+  width: 100%;
+  padding: 20px 70px 40px 30px;
 }/*# sourceMappingURL=style.css.map */
