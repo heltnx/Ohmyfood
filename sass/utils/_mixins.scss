@@ -6,7 +6,7 @@
 }
 
 @mixin btn-gradient() {
-	background: linear-gradient(to top, $color-primary, $color-secondary);
+	background: $gradient;
 	padding: 15px 20px;
 	margin: auto;
 	border: none;
