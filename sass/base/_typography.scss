@@ -12,7 +12,6 @@ button {
 
 .logo {
     font-family: $font-family_2;
-    font-style: italic;
     font-weight: 400;
     line-height: 43.74px;
     color: $color-black;
@@ -27,4 +26,11 @@ h2{
     padding: 10px 0;
     width: 40px;
     text-transform: uppercase;
+}
+
+h3{
+    font-family: $font-family_1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
 }

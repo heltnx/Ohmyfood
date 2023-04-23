@@ -45,7 +45,6 @@ button {
 
 .logo {
   font-family: "Shrikhand";
-  font-style: italic;
   font-weight: 400;
   line-height: 43.74px;
   color: #000000;
@@ -60,6 +59,13 @@ h2 {
   padding: 10px 0;
   width: 40px;
   text-transform: uppercase;
+}
+
+h3 {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
 }
 
 .instructions {
@@ -370,6 +376,9 @@ footer i {
   background: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
   transform: translatey(-40px);
+  max-width: 1055PX;
+  align-self: center;
+  margin: auto;
 }
 .menu h1 {
   font-size: 28px;
@@ -380,7 +389,7 @@ footer i {
 }
 .menu .card-content {
   width: 100%;
-  padding: 20px 70px 40px 30px;
+  padding: 20px 30px 40px 20px;
 }
 .menu .card-content i {
   font-weight: 100;
@@ -392,4 +401,17 @@ footer i {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%);
+}
+
+.card-plate {
+  background-color: #ffffff;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15.0431px;
+  isolation: isolate;
+}
+.card-plate h3 {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
