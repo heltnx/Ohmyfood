@@ -99,6 +99,33 @@ h3 {
   margin-right: 27px;
 }
 
+.select {
+  height: 71px;
+  background-color: #99E2D0;
+  width: 59px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  top: 0;
+  right: -59px;
+}
+.select i {
+  padding: 20px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white;
+  background-image: #ffffff;
+}
+
+.card-plate:active .select {
+  transform: translateX(-59px);
+  transition-duration: 250ms;
+}
+
+.card-plate:active .margin {
+  transform: translateX(-59px);
+  transition-duration: 250ms;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -333,7 +360,7 @@ footer i {
   font-weight: 100;
   font-size: 22px;
 }
-.home .card i:hover {
+.home .card i:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -376,8 +403,7 @@ footer i {
   background: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
   transform: translatey(-40px);
-  max-width: 1055PX;
-  align-self: center;
+  max-width: 1055px;
   margin: auto;
 }
 .menu h1 {
@@ -389,29 +415,48 @@ footer i {
 }
 .menu .card-content {
   width: 100%;
-  padding: 20px 30px 40px 20px;
+  padding: 20px 20px 40px 20px;
 }
 .menu .card-content i {
   font-weight: 100;
   font-size: 22px;
 }
-.menu .card-content i:hover {
+.menu .card-content i:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%);
 }
+.menu .card-content i {
+  margin-right: 20px;
+}
 
 .card-plate {
   background-color: #ffffff;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 15.0431px;
-  isolation: isolate;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  padding: 1px 20px;
+  position: relative;
+  overflow: hidden;
 }
 .card-plate h3 {
-  width: 80%;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+.card-plate .txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-plate .txt p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.card-plate .txt span {
+  font-weight: 700;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
