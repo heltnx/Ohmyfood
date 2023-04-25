@@ -98,7 +98,6 @@
     position: relative;
     @include card-icon;
   }
-
 }
 
 ///*****Medias queries****///
@@ -111,13 +110,10 @@
     margin-left: 0;
   }
 
-
-
   h2 {
     max-width: none !important;
     margin: 20px !important;
   }
-
 
   .contain-card {
     display: flex;
@@ -132,5 +128,4 @@
     width: 46%;
     margin: 0;
   }
-
 }
