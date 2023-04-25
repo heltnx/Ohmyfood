@@ -50,17 +50,6 @@ button {
   color: #000000;
 }
 
-h2 {
-  font-family: "roboto";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 18.75px;
-  border-bottom: 3px solid #99E2D0;
-  padding: 10px 0;
-  width: 40px;
-  text-transform: uppercase;
-}
-
 h3 {
   font-family: "roboto";
   font-weight: 500;
@@ -142,7 +131,6 @@ h3 {
   top: 23.33px;
   bottom: 23.33px;
   width: 18px;
-  display: none;
 }
 .header .logo {
   padding: 20px 80px;
@@ -412,6 +400,16 @@ footer i {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+.menu h2 {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 10px 0;
+  width: 40px;
+  text-transform: uppercase;
 }
 .menu .card-content {
   width: 100%;

@@ -19,6 +19,17 @@
     margin-bottom: 30px;
   }
 
+  h2{
+    font-family: $font-family_1;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18.75px;
+    border-bottom: 3px solid $color-terciaire;
+    padding: 10px 0;
+    width: 40px;
+    text-transform: uppercase;
+}
+
   .card-content {
     width: 100%;
     padding: 20px 20px 40px 20px;
