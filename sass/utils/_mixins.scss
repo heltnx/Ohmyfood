@@ -63,6 +63,8 @@
 		-webkit-background-clip: text;
 		color: transparent;
 		background-image: linear-gradient(0deg, $color-secondary -11.44%, $color-primary 123.93%);
+		transform-origin: bottom 50%;
+		transition: ease-in-out 300ms;
 	  }
 	}
   }
