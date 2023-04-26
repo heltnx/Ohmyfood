@@ -105,12 +105,12 @@ h3 {
   background-image: #ffffff;
 }
 
-.card-plate:active .select {
+.card-plate:hover .select {
   transform: translateX(-59px);
   transition-duration: 250ms;
 }
 
-.card-plate:active .margin {
+.card-plate:hover .margin {
   transform: translateX(-59px);
   transition-duration: 250ms;
 }
@@ -348,7 +348,7 @@ footer i {
   font-weight: 100;
   font-size: 22px;
 }
-.home .card i:active {
+.home .card i:hover, .home .card i:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -419,7 +419,7 @@ footer i {
   font-weight: 100;
   font-size: 22px;
 }
-.menu .card-content i:active {
+.menu .card-content i:hover, .menu .card-content i:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;

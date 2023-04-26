@@ -18,16 +18,16 @@
 
 //Anim check select********
 
-.card-plate:active .select {
+ .card-plate:hover .select {
     transform: translateX(-59px);
     transition-duration: 250ms;
   }
 
-  .card-plate:active .margin {
+  .card-plate:hover .margin{
     transform: translateX(-59px);
     transition-duration: 250ms;
   }
-  
+
 
   
   
