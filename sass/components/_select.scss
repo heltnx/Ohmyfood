@@ -1,39 +1,34 @@
 .select {
-    height: 71px;
-    background-color: $color-terciaire;
-    width: 59px;
-    border-radius: 0px 15px 15px 0px;
-    position: absolute;
-    top: 0;
-    right:-59px;
-    & i{
-        padding: 20px;
-        background-clip: text;
-		-webkit-background-clip: text;
-		color: white;
-		background-image: $color-white;
-      
-    }
+  height: 71px;
+  background-color: $color-terciaire;
+  width: 59px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  top: 0;
+  right: -59px;
+
+  & i {
+    padding: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    background-image: $color-white;
+
+  }
 }
 
 //Anim check select********
-.card-plate{
-  
-  &:hover .select, &:hover .margin {
+.card-plate {
+
+  &:hover .select,
+  &:hover .margin {
     transform: translateX(-59px);
     transition-duration: 250ms;
   }
 
-  &:not(:hover) .select, &:not(:hover) .margin{
+  &:not(:hover) .select,
+  &:not(:hover) .margin {
     transform: translateX(59px);
     transition-duration: 250ms;
   }
 }
- 
-
-
-   
-  
-
-  
-  
