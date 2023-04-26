@@ -52,29 +52,36 @@
 		margin-right: 27px;
 	}
 }
+
 ///icon-heart**********
+
 @mixin card-icon {
 	i {
-	  font-weight: 100;
-	  font-size: 22px;
-	  &:hover, &:active {
-		font-weight: 900;
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-		background-image: linear-gradient(0deg, $color-secondary -11.44%, $color-primary 123.93%);
-		transform-origin: bottom 100%;
-		transition: ease-in-out 300ms;
-	  }
+		font-weight: 100;
+		font-size: 22px;
+
+		&:hover,
+		&:active {
+			font-weight: 900;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			background-image: linear-gradient(0deg, $color-secondary -11.44%, $color-primary 123.93%);
+			transform-origin: bottom 100%;
+			transition: ease-in-out 300ms;
+		}
 	}
-  }
+}
 
 
 ///************cards**********
+
 @mixin card {
-	.card{
+
+	.card {
 		@extend %flex-column;
 		margin-top: 33px;
+
 		&-content {
 			background-color: $color-white;
 			padding-left: 15px;
@@ -82,28 +89,29 @@
 			border-radius: 0px 0px 20px 20px;
 			margin-top: -5px;
 		}
-	
+
 		&-txt {
 			width: 95%;
-	
+
 			h3 {
 				display: flex;
 				justify-content: space-between;
 				margin-bottom: 5px;
 			}
-			
+
 			&-subtitle {
 				font-size: 17px;
 				font-weight: 300;
 				padding-bottom: 20px;
 				text-align: left;
 			}
-	
+
 			& p {
 				margin-top: 10px;
 				font-weight: 300;
 			}
 		}
+
 		&-badge {
 			background-color: $color-terciaire;
 			color: #008766;
@@ -120,16 +128,16 @@
 	}
 
 }
-  
+
 
 
 ///----MEDIAS QUERIES---///
 
 
 @mixin desktop {
-  @media only screen and (min-width: $large-screen) {
-    @content;
-  }
+	@media only screen and (min-width: $large-screen) {
+		@content;
+	}
 }
 
 //*************
