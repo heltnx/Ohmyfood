@@ -34,6 +34,7 @@
 
     h2{
       padding-top: 40px;
+      width: 100%;
     }
   }
 
@@ -62,7 +63,6 @@
     display: block;
 
     h2 {
-      max-width: 600px;
       margin: auto;
       margin-bottom: 20px;
     }
@@ -76,9 +76,9 @@
   }
 
   .restaurants-contain {
-    width: 90%;
+    padding: 20px;
     margin: auto;
-    max-width: 1100px;
+    max-width: 1080px;
   }
 
   .contain-card {
@@ -99,14 +99,15 @@
 
 @include desktop {
   .nav {
-    width: 1053px;
+    width: 1080px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 0;
   }
-
+  
   h2 {
-    margin: 20px !important;
+    margin: 20px;
   }
 
   .contain-card {
