@@ -20,6 +20,7 @@ body {
 
 main {
   width: 100%;
+  background-color: #F7F7F7;
 }
 
 section {
@@ -416,7 +417,7 @@ footer i {
 }
 .menu .card-content {
   width: 100%;
-  padding: 20px 20px 40px 20px;
+  padding: 20px;
 }
 .menu .card-content .heart {
   font-weight: 100;
