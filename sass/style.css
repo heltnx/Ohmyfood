@@ -67,6 +67,9 @@ h3 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease-in-out;
 }
+.btn-gradient a {
+  color: #ffffff;
+}
 .btn-gradient:hover {
   background: #ff7edb;
 }
@@ -259,7 +262,7 @@ footer i {
   font-weight: 300;
   color: #353535;
   line-height: 21px;
-  margin-bottom: 27px;
+  margin-bottom: 37px;
   text-align: center;
 }
 .home h1 {
@@ -270,15 +273,17 @@ footer i {
   text-align: center;
   padding: 0 20px;
 }
-.home .btn-gradient a {
-  color: #ffffff;
-}
 .home .fonctionnement {
-  margin: 28px auto 65px auto;
+  background-color: #ffffff;
+  margin: 28px auto 60px auto;
+}
+.home .fonctionnement h2 {
+  padding-top: 40px;
 }
 .home .nav {
   margin-top: 10px;
   margin-left: 5px;
+  padding-bottom: 68px;
 }
 .home .instruction {
   height: 72.38px;
@@ -315,7 +320,7 @@ footer i {
 }
 .home .restaurants {
   background-color: #F7F7F7;
-  padding-top: 54px;
+  padding-top: 44px;
   padding-bottom: 66px;
   display: block;
 }
@@ -368,7 +373,6 @@ footer i {
     margin-left: 0;
   }
   h2 {
-    max-width: none !important;
     margin: 20px !important;
   }
   .contain-card {
@@ -488,5 +492,11 @@ footer i {
 
 .desserts {
   opacity: 0;
-  animation: apparition 6s ease-in-out forwards;
+  animation: apparition 5s ease-in-out forwards;
+}
+
+.menu .btn-gradient {
+  width: 186px;
+  text-align: center;
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

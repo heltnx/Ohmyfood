@@ -99,6 +99,15 @@
 }
 .desserts{
   opacity: 0;
-  animation: apparition 6s ease-in-out forwards;
+  animation: apparition 5s ease-in-out forwards;
 }
 
+///bouton gradient
+
+.menu {
+  .btn-gradient{
+    width: 186px;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

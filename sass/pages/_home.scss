@@ -10,7 +10,7 @@
       font-weight: 300;
       color: $bg-grey;
       line-height: 21px;
-      margin-bottom: 27px;
+      margin-bottom: 37px;
       text-align: center
     }
   }
@@ -25,24 +25,22 @@
   }
 
 
-
-  .btn-gradient {
-
-    a {
-      color: $color-white;
-    }
-  }
-
   ///*****Fonctionement*******
 
   .fonctionnement {
     @extend %flex-column;
-    margin: 28px auto 65px auto;
+    background-color: $color-white;
+    margin: 28px auto 60px auto;
+
+    h2{
+      padding-top: 40px;
+    }
   }
 
   .nav {
     margin-top: 10px;
     margin-left: 5px;
+    padding-bottom: 68px;
   }
 
   .instruction {
@@ -59,7 +57,7 @@
 
   .restaurants {
     background-color: $bg-color;
-    padding-top: 54px;
+    padding-top: 44px;
     padding-bottom: 66px;
     display: block;
 
@@ -108,7 +106,6 @@
   }
 
   h2 {
-    max-width: none !important;
     margin: 20px !important;
   }
 
