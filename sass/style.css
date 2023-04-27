@@ -157,12 +157,16 @@ h3 {
   color: white;
 }
 
-.card-plate:hover .select, .card-plate:hover .margin {
+.card-plate:hover .select {
   transform: translateX(-59px);
   transition-duration: 250ms;
 }
-.card-plate:not(:hover) .select, .card-plate:not(:hover) .margin {
+.card-plate:not(:hover) .select {
   transform: translateX(59px);
+  transition-duration: 250ms;
+}
+.card-plate:hover .margin {
+  transform: translateX(-59px);
   transition-duration: 250ms;
 }
 
@@ -458,5 +462,5 @@ footer i {
 }
 .card-plate .txt span {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

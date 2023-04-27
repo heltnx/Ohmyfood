@@ -14,17 +14,22 @@
 }
 
 //Anim check select********
+
 .card-plate {
 
-  &:hover .select,
+  &:hover .select 
+   {
+    transform: translateX(-59px);
+    transition-duration: 250ms;
+  }
+  &:not(:hover) .select 
+   {
+    transform: translateX(59px);
+    transition-duration: 250ms;
+  }
   &:hover .margin {
     transform: translateX(-59px);
     transition-duration: 250ms;
   }
-
-  &:not(:hover) .select,
-  &:not(:hover) .margin {
-    transform: translateX(59px);
-    transition-duration: 250ms;
-  }
+  
 }
