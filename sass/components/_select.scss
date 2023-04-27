@@ -6,6 +6,7 @@
   position: absolute;
   top: 0;
   right: -62px;
+  transition-duration: 250ms;
 
   & .check {
     padding: 24px;
@@ -27,11 +28,7 @@
     transform: translateX(-62px);
     transition-duration: 250ms;
   }
-  &:not(:hover) .select 
-   {
-    transform: translateX(62px);
-    transition-duration: 250ms;
-  }
+
   &:hover .margin {
     transform: translateX(-62px);
     transition-duration: 250ms;

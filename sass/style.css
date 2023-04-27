@@ -151,6 +151,7 @@ h3 {
   position: absolute;
   top: 0;
   right: -62px;
+  transition-duration: 250ms;
 }
 .select .check {
   padding: 24px;
@@ -161,10 +162,6 @@ h3 {
 
 .card-plate:hover .select {
   transform: translateX(-62px);
-  transition-duration: 250ms;
-}
-.card-plate:not(:hover) .select {
-  transform: translateX(62px);
   transition-duration: 250ms;
 }
 .card-plate:hover .margin {
@@ -434,7 +431,7 @@ footer i {
   transform-origin: bottom 100%;
   transition: ease-in-out 300ms;
 }
-.menu .card-content i {
+.menu .card-content .heart {
   margin-right: 20px;
 }
 
