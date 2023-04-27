@@ -150,23 +150,25 @@ h3 {
   border-radius: 0px 15px 15px 0px;
   position: absolute;
   top: 0;
-  right: -59px;
+  right: -62px;
 }
-.select i {
-  padding: 20px;
+.select .check {
+  padding: 24px;
   color: white;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .card-plate:hover .select {
-  transform: translateX(-59px);
+  transform: translateX(-62px);
   transition-duration: 250ms;
 }
 .card-plate:not(:hover) .select {
-  transform: translateX(59px);
+  transform: translateX(62px);
   transition-duration: 250ms;
 }
 .card-plate:hover .margin {
-  transform: translateX(-59px);
+  transform: translateX(-62px);
   transition-duration: 250ms;
 }
 
@@ -346,11 +348,11 @@ footer i {
   margin-bottom: 20px;
   position: relative;
 }
-.home .card i {
+.home .card .heart {
   font-weight: 100;
   font-size: 22px;
 }
-.home .card i:hover, .home .card i:active {
+.home .card .heart:hover, .home .card .heart:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -419,11 +421,11 @@ footer i {
   width: 100%;
   padding: 20px 20px 40px 20px;
 }
-.menu .card-content i {
+.menu .card-content .heart {
   font-weight: 100;
   font-size: 22px;
 }
-.menu .card-content i:hover, .menu .card-content i:active {
+.menu .card-content .heart:hover, .menu .card-content .heart:active {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;

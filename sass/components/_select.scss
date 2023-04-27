@@ -5,30 +5,35 @@
   border-radius: 0px 15px 15px 0px;
   position: absolute;
   top: 0;
-  right: -59px;
+  right: -62px;
 
-  & i {
-    padding: 20px;
+  & .check {
+    padding: 24px;
     color: white;
+   font-weight: 900;
+   font-size: 20px;
   }
+   
+   
+ 
 }
-
+ 
 //Anim check select********
 
 .card-plate {
 
   &:hover .select 
    {
-    transform: translateX(-59px);
+    transform: translateX(-62px);
     transition-duration: 250ms;
   }
   &:not(:hover) .select 
    {
-    transform: translateX(59px);
+    transform: translateX(62px);
     transition-duration: 250ms;
   }
   &:hover .margin {
-    transform: translateX(-59px);
+    transform: translateX(-62px);
     transition-duration: 250ms;
   }
   
