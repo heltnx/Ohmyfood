@@ -435,16 +435,6 @@ footer i {
   margin-right: 20px;
 }
 
-@keyframes apparition {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .card-plate {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
@@ -453,9 +443,6 @@ footer i {
   margin-bottom: 12px;
   position: relative;
   overflow: hidden;
-  opacity: 0;
-  animation: apparition 1s ease-in-out forwards;
-  animation-delay: 0.1s;
 }
 .card-plate h3 {
   margin-bottom: 0;
@@ -478,14 +465,27 @@ footer i {
   font-size: 16px;
 }
 
-#escargots {
-  animation-delay: 0.2s;
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.entrees {
+  opacity: 0;
+  animation: apparition 1s ease-in-out forwards;
 }
 
-#canard {
-  animation-delay: 0.5s;
+.plats {
+  opacity: 0;
+  animation: apparition 3s ease-in-out forwards;
 }
 
-#oeufs {
-  animation-delay: 0.8s;
+.desserts {
+  opacity: 0;
+  animation: apparition 6s ease-in-out forwards;
 }/*# sourceMappingURL=style.css.map */
