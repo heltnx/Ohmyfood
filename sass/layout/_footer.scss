@@ -1,32 +1,33 @@
-
 footer {
 	background-color: $bg-grey;
 	width: 100%;
+
 	ul {
 		padding: 0;
 		list-style: none;
 		line-height: 30px;
 		margin-top: 16px 0 0 0;
 	}
+
 	a {
 		color: $color-white;
 	}
 
-    .foot-contain {
-        justify-content: space-around;
-        padding: 22px 25px;
+	.foot-contain {
+		justify-content: space-around;
+		padding: 22px 25px;
 		max-width: 1650px;
-       
-    }
 
-    .logo{
-        font-size: 18px;
+	}
+
+	.logo {
+		font-size: 18px;
 		line-height: 26.24px;
 		color: $color-white;
-        padding-bottom: 16px;
-    }
+		padding-bottom: 16px;
+	}
 
-	i{
+	i {
 		margin-right: 11px;
 	}
 
@@ -34,25 +35,27 @@ footer {
 
 ///**Medias queries***********
 @include desktop {
-	footer{
-	span{
-			 
-		position: relative;
-		left: 100px;
-		top: 20px;
-}
-	.foot-row {
-		display: flex;
-		flex-direction: row-reverse;
-		width: 80%;
+	footer {
+		span {
+
+			position: relative;
+			left: 100px;
+			top: 20px;
+		}
+
+		.foot-row {
+			display: flex;
+			flex-direction: row-reverse;
+			width: 80%;
+		}
+
+		ul {
+			display: flex;
+			width: 600px;
+			justify-content: space-between;
+
+		}
 	}
 
-	ul{
-		display: flex;
-		width: 600px;
-        justify-content: space-between;
-		
-	}
-
-  }
+	
 }

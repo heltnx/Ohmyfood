@@ -31,14 +31,15 @@
   }
 
   .card-content {
-    width: 100%;
     padding: 20px;
+    max-width: 634px;
+    margin: auto;
     @include card-icon;
 
     .heart {
       margin-right: 20px;
     }
-   
+
   }
 }
 
@@ -83,31 +84,57 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.entrees{
+.entrees {
+  padding: 32px 0 0 0;
   opacity: 0;
   animation: apparition 1s ease-in-out forwards;
 }
-.plats{
+
+.plats {
+  padding: 40px 0;
   opacity: 0;
   animation: apparition 3s ease-in-out forwards;
 }
-.desserts{
+
+.desserts {
   opacity: 0;
   animation: apparition 5s ease-in-out forwards;
 }
 
-///bouton gradient
-
 .menu {
-  .btn-gradient{
+  .btn-gradient {
+    display: block;
     width: 186px;
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
+    transform: translateY(20px);
+  }
+  .fond-marge {
+    border: 0;
+    height: 40px;
+    background-color: $bg-color;
+    opacity: 1;
+    transform: translateY(40px);
+  }
+}
+
+
+
+///********Medias queries********///
+
+@include desktop {
+
+  .menu {
+
+    h1 {
+      justify-content: center;
+      gap: 24px;
+    }
   }
 }

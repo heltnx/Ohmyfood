@@ -20,11 +20,6 @@ body {
 
 main {
   width: 100%;
-  background-color: #F7F7F7;
-}
-
-section {
-  display: flex;
 }
 
 a {
@@ -254,7 +249,7 @@ footer i {
   }
 }
 .home .headline {
-  background-color: #F7F7F7;
+  background-color: #F6F6F6;
   padding: 30px 5px 57px 5px;
 }
 .home .headline p {
@@ -320,14 +315,14 @@ footer i {
   color: #9356DC;
 }
 .home .restaurants {
-  background-color: #F7F7F7;
+  background-color: #F6F6F6;
   padding-top: 44px;
   padding-bottom: 66px;
   display: block;
 }
 .home .restaurants h2 {
-  margin: auto;
-  margin-bottom: 20px;
+  max-width: 500px;
+  margin: 20px auto;
 }
 .home .restaurants img {
   -o-object-fit: cover;
@@ -346,10 +341,10 @@ footer i {
 }
 .home .card {
   margin-bottom: 18px;
-  max-width: 600px;
   margin: auto;
   margin-bottom: 20px;
   position: relative;
+  max-width: 500px;
 }
 .home .card .heart {
   font-weight: 100;
@@ -373,8 +368,9 @@ footer i {
     flex-wrap: wrap;
     margin-left: 0;
   }
-  h2 {
-    margin: 20px;
+  .restaurants h2 {
+    margin: 20px 20px;
+    min-width: 95%;
   }
   .contain-card {
     display: flex;
@@ -397,7 +393,7 @@ footer i {
 }
 
 .menu {
-  background: #F7F7F7;
+  background: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
   transform: translatey(-40px);
   max-width: 1055px;
@@ -421,8 +417,9 @@ footer i {
   text-transform: uppercase;
 }
 .menu .card-content {
-  width: 100%;
   padding: 20px;
+  max-width: 634px;
+  margin: auto;
 }
 .menu .card-content .heart {
   font-weight: 100;
@@ -482,11 +479,13 @@ footer i {
   }
 }
 .entrees {
+  padding: 32px 0 0 0;
   opacity: 0;
   animation: apparition 1s ease-in-out forwards;
 }
 
 .plats {
+  padding: 40px 0;
   opacity: 0;
   animation: apparition 3s ease-in-out forwards;
 }
@@ -497,7 +496,22 @@ footer i {
 }
 
 .menu .btn-gradient {
+  display: block;
   width: 186px;
-  text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
+  transform: translateY(20px);
+}
+.menu .fond-marge {
+  border: 0;
+  height: 40px;
+  background-color: #F6F6F6;
+  opacity: 1;
+  transform: translateY(40px);
+}
+
+@media only screen and (min-width: 1100px) {
+  .menu h1 {
+    justify-content: center;
+    gap: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -63,8 +63,8 @@
     display: block;
 
     h2 {
-      margin: auto;
-      margin-bottom: 20px;
+      max-width: 500px;
+      margin: 20px auto;
     }
 
     img {
@@ -87,17 +87,19 @@
 
   .card {
     margin-bottom: 18px;
-    max-width: 600px;
     margin: auto;
     margin-bottom: 20px;
     position: relative;
     @include card-icon;
+    max-width: 500px;
   }
 }
 
-///*****Medias queries****///
+
+///*******Medias queries******///
 
 @include desktop {
+
   .nav {
     width: 1080px;
     display: flex;
@@ -105,11 +107,12 @@
     flex-wrap: wrap;
     margin-left: 0;
   }
-  
+  .restaurants {   
   h2 {
-    margin: 20px;
+      margin: 20px 20px;
+      min-width: 95%;
+    }
   }
-
   .contain-card {
     display: flex;
     flex-wrap: wrap;
@@ -117,10 +120,13 @@
     flex-direction: row;
     gap: 10px 20px;
     justify-content: space-between;
+    }
+
+     .card {
+      width: 46%;
+      margin: 0;
+    }
+  
   }
 
-  .card {
-    width: 46%;
-    margin: 0;
-  }
-}
+  
