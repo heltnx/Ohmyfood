@@ -11,30 +11,44 @@
   & .check {
     padding: 24px;
     color: white;
-   font-weight: 900;
-   font-size: 20px;
+    font-weight: 900;
+    font-size: 20px;
   }
-   
-   
- 
 }
- 
+
 //Anim check select********
 
-.card-plate {
+.card-plate:active {
 
-  &:hover .select 
-   {
+  .select {
     transform: translateX(-62px);
     transition-duration: 250ms;
+    animation-delay: 3s;
   }
 
-  &:hover .margin {
+  .margin {
     transform: translateX(-62px);
     transition-duration: 250ms;
+    animation-delay: 3s;
   }
-  
 }
 
 ///*****Medias queries****///
 
+///********Medias queries********///
+
+@include desktop {
+
+  .card-plate:hover {
+
+    .select {
+      transform: translateX(-62px);
+      transition-duration: 250ms;
+    }
+
+    .margin {
+      transform: translateX(-62px);
+      transition-duration: 250ms;
+    }
+  }
+}
