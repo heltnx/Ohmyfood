@@ -18,22 +18,39 @@
 
 //Anim check select********
 
-.card-plate:active {
+.card-plate:focus{
+
+ .txt{
+  width: 80%;
+ }
+
+ h3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+ }
+
+ P{
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
 
   .select {
-    transform: translateX(-62px);
+    margin-right: 62px;
     transition-duration: 250ms;
     animation-delay: 3s;
   }
 
   .margin {
-    transform: translateX(-62px);
+    margin-right: 2px;
     transition-duration: 250ms;
     animation-delay: 3s;
   }
 }
 
-///*****Medias queries****///
+
 
 ///********Medias queries********///
 
@@ -44,20 +61,13 @@
     .select {
       transform: translateX(-62px);
       transition-duration: 250ms;
+      animation-delay: 3s;
     }
 
     .margin {
       transform: translateX(-62px);
       transition-duration: 250ms;
+      animation-delay: 3s;
     }
   }
-  p {
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 5px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
 }
