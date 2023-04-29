@@ -51,4 +51,13 @@
       transition-duration: 250ms;
     }
   }
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 }
