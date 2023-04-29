@@ -179,6 +179,14 @@ h3 {
     transform: translateX(-62px);
     transition-duration: 250ms;
   }
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .header {
   width: 100%;
@@ -474,9 +482,6 @@ footer i {
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 12px;
-  flex-flow: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card-plate .txt span {
   font-weight: 700;
