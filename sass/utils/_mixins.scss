@@ -19,30 +19,30 @@
 
 	a {
 		color: $color-white;
-	  }
+	}
 
 	&:hover {
 		background-color: $gradient;
 		box-shadow: 0px 4px 10px rgba(0, 0, 5, 0.353);
+
 		&::after {
-            opacity: 0.7;
-			
-			
-        }
+			opacity: 0.7;
+		}
 	}
+
 	&::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;  
-        left: 0;
-        background: $gradient;
-        opacity:1;
-        z-index: -1;
-        transition: all 300ms;
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $gradient;
+		opacity: 1;
+		z-index: -1;
+		transition: all 300ms;
 		border-radius: 25px;
-    }
+	}
 }
 
 @mixin instructions() {
@@ -91,8 +91,7 @@
 			font-weight: 900;
 			background-clip: text;
 			color: transparent;
-			background-image: linear-gradient($color-secondary, $color-primary);
-			transform-origin: bottom 100%;
+			background-image: $gradient;
 			transition: ease-in-out 300ms;
 		}
 	}

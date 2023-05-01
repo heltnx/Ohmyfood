@@ -5,8 +5,7 @@ $color-terciaire: #99E2D0;
 $color-white: #ffffff;
 $color-black: #000000;
 
-$gradient:linear-gradient(to top, $color-secondary, $color-primary);
-
+$gradient:linear-gradient(to bottom, $color-secondary, $color-primary);
 
 $bg-color: #F6F6F6;
 $bg-grey: #353535;
@@ -16,7 +15,7 @@ $bg-grey-2: #EAEAEA;
 $font-family_1: 'roboto';
 $font-family_2: 'Shrikhand';
 
-/// Media queries
+/// ******************Media queries**********************///
 $small-screen: 1999px;
 $large-screen: 1100px;
 
