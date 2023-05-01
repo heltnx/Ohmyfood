@@ -1,55 +1,32 @@
-.select {
-  height: 71px;
-  background-color: $color-terciaire;
-  width: 59px;
-  border-radius: 0px 15px 15px 0px;
-  position: absolute;
-  top: 0;
-  right: -62px;
-  transition-duration: 250ms;
-
-  & .check {
-    padding: 24px;
-    color: white;
-    font-weight: 900;
-    font-size: 20px;
-  }
-}
-
 //Anim check select********
 
-.card-plate:focus{
+.card-plate:focus {
+  caret-color: white;
 
- .txt{
-  width: 80%;
- }
-
- h3{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis
- }
-
- P{
-  width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
- }
-
-  .select {
-    margin-right: 62px;
-    transition-duration: 250ms;
-    animation-delay: 3s;
+  .txt span::after {
+    right: 0;
+    transition: 250ms;
   }
 
   .margin {
-    margin-right: 2px;
-    transition-duration: 250ms;
-    animation-delay: 3s;
+    margin-right: 62px;
+    transition: 250ms;
   }
 }
 
+.card-plate:not(focus) {
+  caret-color: white;
+
+  .txt span::after {
+    right: -68px;
+    transition: 250ms;
+  }
+
+  .margin {
+    margin-right: 0px;
+    transition: 250ms;
+  }
+}
 
 
 ///********Medias queries********///
@@ -58,16 +35,14 @@
 
   .card-plate:hover {
 
-    .select {
-      transform: translateX(-62px);
-      transition-duration: 250ms;
-      animation-delay: 3s;
+    .txt span::after {
+      right: 0;
+      transition: 250ms;
     }
 
     .margin {
-      transform: translateX(-62px);
-      transition-duration: 250ms;
-      animation-delay: 3s;
+      margin-right: 62px;
+      transition: 250ms;
     }
   }
 }

@@ -39,7 +39,6 @@
     .heart {
       margin-right: 20px;
     }
-
   }
 }
 
@@ -66,7 +65,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
     p {
       font-size: 15px;
       font-weight: 300;
@@ -77,10 +76,25 @@
       text-overflow: ellipsis;
     }
 
+    //prix
     span {
       font-weight: 700;
       font-size: 16px;
-      padding-left: 6px;
+      padding: 0 8px;
+
+      //check icone vert
+      &::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f058";
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        padding: 24px;
+        top: 0;
+        background-color: $color-terciaire;
+        width: 20px;
+        border-radius: 0px 15px 15px 0px;
+      }
     }
   }
 }
