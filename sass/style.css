@@ -304,7 +304,7 @@ footer i {
   padding-top: 40px;
   width: 100%;
 }
-.home .nav {
+.home .info {
   margin-top: 10px;
   margin-left: 5px;
   padding-bottom: 68px;
@@ -389,7 +389,7 @@ footer i {
 }
 
 @media only screen and (min-width: 1100px) {
-  .nav {
+  .info {
     width: 1080px;
     display: flex;
     justify-content: space-between;
