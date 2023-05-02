@@ -3,6 +3,10 @@
 .card-plate:focus {
   caret-color: white;
 
+& h3, p{
+ width: 250px;
+
+}
   .txt span::after {
     right: 0;
     transition: 250ms;
@@ -14,7 +18,7 @@
   }
 }
 
-.card-plate:not(focus) {
+.card-plate:not(:focus) {
   caret-color: white;
 
   .txt span::after {
@@ -33,6 +37,15 @@
 
 @include desktop {
 
+  .card-plate:focus {
+    
+  
+  & h3, p{
+   width: max-content;
+  
+  }
+}
+  
   .card-plate:hover {
 
     .txt span::after {

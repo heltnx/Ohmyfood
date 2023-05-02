@@ -165,6 +165,9 @@ h3 {
 .card-plate:focus {
   caret-color: white;
 }
+.card-plate:focus h3, .card-plate:focus p {
+  width: 250px;
+}
 .card-plate:focus .txt span::after {
   right: 0;
   transition: 250ms;
@@ -174,19 +177,23 @@ h3 {
   transition: 250ms;
 }
 
-.card-plate:not(focus) {
+.card-plate:not(:focus) {
   caret-color: white;
 }
-.card-plate:not(focus) .txt span::after {
+.card-plate:not(:focus) .txt span::after {
   right: -68px;
   transition: 250ms;
 }
-.card-plate:not(focus) .margin {
+.card-plate:not(:focus) .margin {
   margin-right: 0px;
   transition: 250ms;
 }
 
 @media only screen and (min-width: 1100px) {
+  .card-plate:focus h3, .card-plate:focus p {
+    width: -moz-max-content;
+    width: max-content;
+  }
   .card-plate:hover .txt span::after {
     right: 0;
     transition: 250ms;
