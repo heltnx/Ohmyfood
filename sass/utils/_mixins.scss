@@ -79,23 +79,6 @@
 	}
 }
 
-///icon-heart**********
-
-@mixin card-icon {
-	.heart {
-		font-weight: 100;
-		font-size: 22px;
-
-		&:hover,
-		&:active {
-			font-weight: 900;
-			background-clip: text;
-			color: transparent;
-			background-image: $gradient;
-			transition: ease-in-out 300ms;
-		}
-	}
-}
 
 
 ///************cards**********

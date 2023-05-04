@@ -1,0 +1,40 @@
+//coeur qui se rempli en degradé de bas en haut
+
+.heart {
+    position: relative;
+    font-weight: 100;
+    z-index: 1;
+   
+    cursor: pointer;
+    &::after {
+      content: "\f004";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     z-index: -1;
+     color: white;
+     transform-origin: bottom;
+    }
+  
+    &:hover::after {
+      font-weight: 900;
+              background-clip: text;
+              color: transparent;
+              background-image: $gradient;
+              transition: ease-in-out 300ms;
+        animation: heart-color 3s forwards;
+    }
+  }
+  
+  @keyframes heart-color {
+    0% {
+  transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

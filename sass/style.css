@@ -120,6 +120,42 @@ h3 {
   margin-right: 27px;
 }
 
+.heart {
+  position: relative;
+  font-weight: 100;
+  z-index: 1;
+  cursor: pointer;
+}
+.heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  color: white;
+  transform-origin: bottom;
+}
+.heart:hover::after {
+  font-weight: 900;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: ease-in-out 300ms;
+  animation: heart-color 3s forwards;
+}
+
+@keyframes heart-color {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .card .card {
   margin-top: 33px;
 }
@@ -203,6 +239,35 @@ h3 {
     transition: 250ms;
   }
 }
+.loader {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 7px solid rgba(241, 20, 245, 0.5);
+  border-radius: 50%;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+  border-radius: 50%;
+  border-top: 7px solid #9356DC;
+  animation: spin 1S linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -381,18 +446,6 @@ footer i {
   position: relative;
   max-width: 500px;
 }
-.home .card .heart {
-  font-weight: 100;
-  font-size: 22px;
-}
-.home .card .heart:hover, .home .card .heart:active {
-  font-weight: 900;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: ease-in-out 300ms;
-}
 
 @media only screen and (min-width: 1100px) {
   .info {
@@ -454,18 +507,6 @@ footer i {
   padding: 20px 13px;
   max-width: 634px;
   margin: auto;
-}
-.menu .card-content .heart {
-  font-weight: 100;
-  font-size: 22px;
-}
-.menu .card-content .heart:hover, .menu .card-content .heart:active {
-  font-weight: 900;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: ease-in-out 300ms;
 }
 .menu .card-content .heart {
   margin-right: 20px;
