@@ -253,7 +253,6 @@ h3 {
 }
 .loader-contain .logo {
   font-size: 40px;
-  transform: scale(0 1);
 }
 .loader-contain {
   animation: spin-contain 0s 1s forwards;
