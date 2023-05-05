@@ -34,4 +34,13 @@
 	}
 }
 
+///*******Medias queries******///
 
+@include desktop {
+
+  header .logo{
+    
+        margin: 30px 80px;
+   
+    }
+}

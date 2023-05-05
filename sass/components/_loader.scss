@@ -1,33 +1,82 @@
 
+
+.loader-contain {
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    z-index: 2;
+    
+
+    & .logo{
+        font-size: 40px;
+        transform: scale(0 1);
+    }
+    
+    & {
+        animation: spin-contain 0s 1s forwards;
+
+        >.spin {
+            animation: spin infinite ease-in-out;
+        }
+    }
+
+}
+
+@keyframes spin-contain {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(-9999px);
+        opacity: 0;
+    }
+}
+
 .loader {
     position: relative;
     width: 45px;
     height: 45px;
     display: inline-block;
     vertical-align: middle;
-    border: 7px solid rgba($color: #f114f571, $alpha:0.5);
+    border: 7px solid rgba($color: #f114f571, $alpha: 0.5);
     border-radius: 50%;
-    &::after{
-        content:'';
+    transform: scale(1.5);
+    &::after {
+        content: '';
         position: absolute;
-        top: -7px;;
-        left:-7px;
+        top: -7px;
+        ;
+        left: -7px;
         right: -7px;
-        bottom:-7px ;
+        bottom: -7px;
         border-radius: 50%;
-     
+
         border-top: 7px solid $color-primary;
 
         animation: spin 1S linear infinite;
 
-        @keyframes spin{
+        @keyframes spin {
 
-            0%{transform: rotate(0deg);}
-            
-            100%{transform: rotate(360deg);}
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
+
     }
 }
-
-  
-  
