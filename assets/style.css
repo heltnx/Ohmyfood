@@ -137,22 +137,22 @@ h3 {
   color: white; /* couleur de la police de l'icone pour que le contour n'apparaisse pas en noir sur le degradé */
   transform-origin: bottom; /* définit le depart de l'animation en bas de l'élément */
   transform: scale(0); /* taille de "l'icône colorée" invisible */
-  transition: transform linear 600ms; /* fluidité de l'animation*/
+  transition: transform linear 600ms; /* fluidité de la transition*/
 }
-.heart:active::after { /* au survol de l'élément .heart */
+.heart:hover::after, .heart:active::after { /* au survol de l'élément .heart */
   font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text; /* définit la zone où le fond est affiché comme étant la même zone que l'icone */
+  background: linear-gradient(to bottom, #FF79DA, #9356DC); /*fond utilisant la viariable ppour le dégradé*/
+  background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
+  -webkit-background-clip: text; /* de même pour le navigateur chrome */
   -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
   transform: scale(1); /* taille de "l'icône colorée" visible */
   transition: transform linear 600ms;
 }
-.heart:not(:active)::after { /* Style lorsque la souris est retirée du survol */
+.heart:not(:active)::after, .heart:not(:hover)::after { /* Style lorsque la souris est retirée du survol */
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0); /* taille de "l'icône colorée" invisible */
   transition: transform linear 600ms;
@@ -553,7 +553,7 @@ footer i {
   margin: auto;
 }
 .menu .card-content .heart {
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .card-plate {
@@ -599,10 +599,10 @@ footer i {
   color: white;
   font-size: 20px;
   position: absolute;
-  padding: 24px;
+  padding: 26px;
   top: 0;
   background-color: #99E2D0;
-  width: 20px;
+  width: 16px;
   border-radius: 0px 15px 15px 0px;
 }
 

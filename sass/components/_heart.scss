@@ -15,22 +15,25 @@
     color: white;    /* couleur de la police de l'icone pour que le contour n'apparaisse pas en noir sur le degradé */
     transform-origin: bottom;    /* définit le depart de l'animation en bas de l'élément */
     transform: scale(0); /* taille de "l'icône colorée" invisible */
-    transition: transform linear 600ms ; /* fluidité de l'animation*/
+    transition: transform linear 600ms ; /* fluidité de la transition*/
   }
 
-  &:active::after {   /* au survol de l'élément .heart */
+  &:hover::after,     /* au survol de l'élément .heart */
+&:active::after  {   /* au survol de l'élément .heart */
     font-weight: 900;    /* graisse de police pour remplir le coeur avec de la couleur */
-    background: linear-gradient(to bottom, $color-secondary, $color-primary);
-    background-clip: text;    /* définit la zone où le fond est affiché comme étant la même zone que l'icone */
+    background: $gradient; /*fond utilisant la viariable ppour le dégradé*/
+    background-clip: text;    /* pour afficher le fond comme étant la même zone que l'icone */
+    -webkit-background-clip: text; /* de même pour le navigateur chrome */
     -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
     transform: scale(1);  /* taille de "l'icône colorée" visible */
     transition: transform linear 600ms ;
   }
 
-  &:not(:active)::after {  /* Style lorsque la souris est retirée du survol */
+  &:not(:active)::after, &:not(:hover)::after  {  /* Style lorsque la souris est retirée du survol */
     font-weight: 900;   
-    background: linear-gradient(to bottom, $color-secondary, $color-primary);
-    background-clip: text;   
+    background: $gradient;
+    background-clip: text; 
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent; 
     transform: scale(0); /* taille de "l'icône colorée" invisible */
     transition: transform linear 600ms ; 
