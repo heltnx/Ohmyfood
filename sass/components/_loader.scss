@@ -1,80 +1,62 @@
-.loader-contain {
+/*------------------------------------------ loader ---------------------------------*/
+
+ /*---- conteneur de la largeur et hauteur du site ----*/
+.loader-contain {  
+    @extend %flex-column; // centre les éléments en flex box column //
     width: 100%;
     height: 100%;
-    background-color: $color-white;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    z-index: 2;
-
+    background-color: $color-white; /* couleur du fond pour rester invisible  */
+    position: absolute; /* sort du flux et se positione individuellement  */
+    gap: 70px;    /* séparation entre les éléments */
+    z-index: 2;  /* positionne le conteneur "au dessus" de tout le site */
+    animation: spin-contain 0s 1.5s forwards; /* --l'animation s'execute pendant 1.5 secondes 
+                               ---------la durée de l'action est à 0s pour que l'apparition du site soit instentanée) 
+                               ---------reste sur l'état final (disparait horizontalement)*/
 
     & .logo {
         font-size: 40px;
     }
-
-    & {
-        animation: spin-contain 0s 1s forwards;
-
-        >.spin {
-            animation: spin infinite ease-in-out;
+ 
+    @keyframes spin-contain { /*-- annimation du conteneur pour le faire disparaitre --*/
+        0% {             /*------- au départ de l'animation */
+            transform: translateX(0); /* le conteneur est en place horizontalement */
+        }
+    
+        100% {     /*------------- à la fin de l'animation */
+            transform: translateX(-2999px); /* le conteneur disparait horizontalement hors du site sur la gauche */
         }
     }
-
 }
 
-@keyframes spin-contain {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: translateX(-9999px);
-        opacity: 0;
-    }
-}
-
-.loader {
-    position: relative;
-    width: 45px;
+/* --------------- loader annimé ---------------*/
+.loader { 
+    width: 45px; /* dimentions du conteneur du loader  */
     height: 45px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 7px solid rgba($color: #f114f571, $alpha: 0.5);
-    border-radius: 50%;
-    transform: scale(1.5);
+    border: 7px solid rgba($color: #f114f571, $alpha: 0.5); /* bordure épaisse, colorée et un peu transparente */
+    border-radius: 50%;  /* forme de la bordure circulaire  */
+    transform: scale(1.5); /* réglage simple de la dimension du loader */
 
-    &::after {
+    &::after { /* contenu suivant le ".loader" (sans html)*/
         content: '';
-        position: absolute;
-        top: -7px;
-        ;
-        left: -7px;
+        position: absolute; /* positionnement strictement au dessus du loader */
+        top: -7px; 
+        left: -7px;/* on enlève la largeur de la bordure qui n'est pas prise en compte */
         right: -7px;
         bottom: -7px;
-        border-radius: 50%;
+        border-top: 7px solid $color-primary; /* on met la nouvelle bordure seulement en haut  */
+        border-radius: 50%; /* on la rend circulaire pour la placer au dessus de celle du loader  */
+        animation: spin 1s linear infinite; /* nom et comportement pour l'animations du "loader" */
 
-        border-top: 7px solid $color-primary;
-
-        animation: spin 1S linear infinite;
-
+ /*-- annimation de l'element "after" (bordure-haut au dessus du loader) pour le faire tourner --*/
         @keyframes spin {
 
-            0% {
-                transform: rotate(0deg);
+            0% {    /*------- au départ de l'animation */
+                transform: rotate(0deg); /* la bordure-haut reste à sa place - en haut */
             }
 
-            100% {
-                transform: rotate(360deg);
+            100% {  /*------- à la fin de l'animation */
+                transform: rotate(360deg); /* la bordure-haut reste à sa place  */
             }
         }
-
     }
 }

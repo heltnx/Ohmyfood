@@ -1,4 +1,4 @@
-/* class .heart -  coeur qui se rempli en degradé de bas en haut */
+/*-------heart -  coeur qui se rempli en degradé de bas en haut-------------------- */
 
 .heart {
   position: relative;  /* élément positionné par rapport à son emplacement normal sur la page */
@@ -29,7 +29,8 @@
     transition: transform ease-in-out 500ms ;
   }
 
-  &:not(:active)::after, &:not(:hover)::after  {  /* Style lorsque la souris est retirée du survol */
+  &:not(:active)::after,
+  &:not(:hover)::after  {  /* Style lorsque la souris est retirée du survol */
     font-weight: 900;   
     background: $gradient;
     background-clip: text; 
