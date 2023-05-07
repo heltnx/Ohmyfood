@@ -193,6 +193,7 @@ h3 {
   font-weight: 500;
   font-size: 14px;
   text-align: center;
+  cursor: pointer;
 }
 
 .card-plate:focus {
