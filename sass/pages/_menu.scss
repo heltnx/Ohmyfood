@@ -1,3 +1,5 @@
+/****************************************************Page des menus*******************************/
+
 .image img {
   object-fit: cover;
   width: 100%;
@@ -71,14 +73,14 @@
       text-overflow: ellipsis;
     }
 
-    //prix
-    span {
+
+    span {  /*-------------- prix ---*/
       font-weight: 700;
       font-size: 16px;
       padding: 0 8px;
 
-      //check icone vert
-      &::after {
+      
+      &::after {  /*-- --------check icone vert --*/
         font-family: "Font Awesome 6 Free";
         content: "\f058";
         color: white;
@@ -140,7 +142,7 @@
   }
 }
 
-///********Medias queries**************///
+/*++++++++++++++++++++++++ Medias queries pages menus restaurant only DESKTOP ++++++++++++++++++++++++*/
 
 @include desktop {
 
@@ -150,6 +152,7 @@
       justify-content: center;
       gap: 24px;
     }
+
     .heart {
       margin-right: 22px;
     }

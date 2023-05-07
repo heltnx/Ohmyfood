@@ -1,3 +1,5 @@
+/*************************************************** footer *******************************/
+
 footer {
 	background-color: $bg-grey;
 	width: 100%;
@@ -33,7 +35,8 @@ footer {
 
 }
 
-///**Medias queries***********
+/*............................ Medias queries footer only DESKTOP ...................*/
+
 @include desktop {
 	footer {
 		span {

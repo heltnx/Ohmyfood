@@ -1,7 +1,6 @@
-/*------------------------------------------ loader ---------------------------------*/
-
- /*---- conteneur de la largeur et hauteur du site ----*/
-.loader-contain {  
+/*------------------------------------------ loader --------------------------------*/
+ 
+.loader-contain {  /*---- conteneur de la largeur et hauteur du site ----*/
     @extend %flex-column; // centre les éléments en flex box column //
     width: 100%;
     height: 100%;
@@ -27,9 +26,8 @@
         }
     }
 }
-
-/* --------------- loader annimé ---------------*/
-.loader { 
+   
+.loader { /* --------------- loader annimé ---------------*/
     width: 45px; /* dimentions du conteneur du loader  */
     height: 45px;
     border: 7px solid rgba($color: #f114f571, $alpha: 0.5); /* bordure épaisse, colorée et un peu transparente */
@@ -47,8 +45,8 @@
         border-radius: 50%; /* on la rend circulaire pour la placer au dessus de celle du loader  */
         animation: spin 1s linear infinite; /* nom et comportement pour l'animations du "loader" */
 
- /*-- annimation de l'element "after" (bordure-haut au dessus du loader) pour le faire tourner --*/
-        @keyframes spin {
+ 
+        @keyframes spin {  /*-- annimation de l'element "after" (bordure-haut au dessus du loader) pour le faire tourner --*/
 
             0% {    /*------- au départ de l'animation */
                 transform: rotate(0deg); /* la bordure-haut reste à sa place - en haut */

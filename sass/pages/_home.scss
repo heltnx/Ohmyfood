@@ -1,7 +1,6 @@
-/**********************************************************Page accueil*******************************/
+/****************************************************Page accueil*******************************/
 
 /*---------------------headline section en tête------*/
-
   .headline {
     @extend %flex-column;
     background-color: $bg-color;
@@ -28,7 +27,6 @@
 
 
   /*------------------fonctionnement cartes----------*/
-
   .fonctionnement {
     @extend %flex-column;
     background-color: $color-white;
@@ -57,7 +55,6 @@
   }
 
   /*---------------card restaurants liste----------*/
-
   .restaurants {
     background-color: $bg-color;
     padding-top: 44px;
@@ -97,7 +94,7 @@
 
 
 
-/*++++++++++++++++++++++++ Medias queries home only DESKTOP ++++++++++++++++++++++++*/
+/*............................ Medias queries home only DESKTOP ...................*/
 
 @include desktop {
   * .info {
@@ -130,5 +127,3 @@
   }
 
 }
-
-/*-----------------------------fin Medias queries home-----------------------*/
