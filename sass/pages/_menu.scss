@@ -34,10 +34,6 @@
     padding: 20px 13px;
     max-width: 634px;
     margin: auto;
-
-    .heart {
-      margin-right: 22px;
-    }
   }
 }
 
@@ -153,6 +149,9 @@
     h1 {
       justify-content: center;
       gap: 24px;
+    }
+    .heart {
+      margin-right: 22px;
     }
   }
 }

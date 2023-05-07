@@ -37,5 +37,22 @@
     transition: transform ease-in-out 2s ; 
   }
 }
+///********Medias queries**************///
+
+@include desktop {
+
+  .heart {
+
+    &:hover::after {     /* au click de l'élément .heart */
+      font-weight: 900;    /* graisse de police pour remplir le coeur avec de la couleur */
+      background: $gradient; /*fond utilisant la viariable ppour le dégradé*/
+      background-clip: text;    /* pour afficher le fond comme étant la même zone que l'icone */
+      -webkit-background-clip: text; /* de même pour le navigateur chrome */
+      -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+      transform: scale(1);  /* taille de "l'icône colorée" visible */
+      transition: transform ease-in-out 300ms;
+    }
+  }
+}
 
 

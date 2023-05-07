@@ -140,6 +140,17 @@ h3 {
   transition: transform ease-in-out 2s;
 }
 
+@media only screen and (min-width: 1100px) {
+  .heart:hover::after { /* au click de l'élément .heart */
+    font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
+    background: linear-gradient(to bottom, #FF79DA, #9356DC); /*fond utilisant la viariable ppour le dégradé*/
+    background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
+    -webkit-background-clip: text; /* de même pour le navigateur chrome */
+    -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+    transform: scale(1); /* taille de "l'icône colorée" visible */
+    transition: transform ease-in-out 300ms;
+  }
+}
 .card .card {
   margin-top: 33px;
 }
@@ -538,9 +549,6 @@ h1 {
   max-width: 634px;
   margin: auto;
 }
-.menu .card-content .heart {
-  margin-right: 22px;
-}
 
 .card-plate {
   background-color: #ffffff;
@@ -637,5 +645,8 @@ h1 {
   .menu h1 {
     justify-content: center;
     gap: 24px;
+  }
+  .menu .heart {
+    margin-right: 22px;
   }
 }
