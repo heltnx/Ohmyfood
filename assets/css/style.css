@@ -106,11 +106,11 @@ h3 {
 }
 
 /*-------heart -  coeur qui se rempli en degradé de bas en haut-------------------- */
-.heart {
+.heart:active {
   position: relative; /* élément positionné par rapport à son emplacement normal sur la page */
   cursor: pointer;
 }
-.heart::after { /* ajoute un élément de contenu après l'élément .heart */
+.heart:active::after { /* ajoute un élément de contenu après l'élément .heart */
   content: "\f004"; /* icône de cœur de Font Awesome */
   font-family: "Font Awesome 6 Free";
   position: absolute;
@@ -121,16 +121,16 @@ h3 {
   color: white; /* couleur de la police de l'icone pour que le contour n'apparaisse pas en noir sur le degradé */
   transform-origin: bottom; /* définit le depart de l'animation en bas de l'élément */
 }
-.heart:active::after, .heart:hover::after { /* au survol de l'élément .heart */
+.heart:active:active::after { /* au survol de l'élément .heart */
   font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
   background: linear-gradient(to bottom, #FF79DA, #9356DC); /*fond utilisant la viariable ppour le dégradé*/
   background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
   -webkit-background-clip: text; /* de même pour le navigateur chrome */
   -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
   transform: scale(1); /* taille de "l'icône colorée" visible */
-  transition: transform ease-in-out 250ms;
+  transition: scale ease-in-out 220ms;
 }
-.heart:not(:active)::after, .heart:not(:hover)::after { /* Style lorsque la souris est retirée du survol */
+.heart:active:not(:active)::after { /* Style lorsque la souris est retirée du survol */
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
