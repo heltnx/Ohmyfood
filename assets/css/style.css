@@ -43,6 +43,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   color: white;
+  text-shadow: 0px 1px 6px rgb(99, 99, 99);
 }
 
 .logo {
@@ -70,13 +71,13 @@ h3 {
   border: none;
   border-radius: 25px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC); /* definit la couleur de fond dégradée du bouton */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.185); /* ombre portée du bouton */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363); /* ombre portée du bouton */
   opacity: 1; /* rend le bouton pleinement visible lors du laché du survol */
   transition: opacity 600ms ease-in-out; /* fluidité de la transition */
 }
 .btn-gradient:hover { /*---- au survol de l'élément .heart */
-  box-shadow: 1px 8px 12px rgba(0, 0, 5, 0.28); /* ombre portée plus difuse */
-  opacity: 0.7; /* rend le bouton légèrement plus clair */
+  box-shadow: 0px 8px 12px rgba(0, 0, 5, 0.39); /* ombre portée plus difuse */
+  opacity: 0.8; /* rend le bouton légèrement plus clair */
   transition: 600ms ease-in-out; /* fluidité de la transition */
 }
 
