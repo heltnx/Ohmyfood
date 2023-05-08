@@ -1,4 +1,4 @@
-/****************************************************Page des menus*******************************/
+/*************************************************** Page des menus ******************************/
 
 .image img {
   object-fit: cover;
@@ -39,62 +39,7 @@
   }
 }
 
-.card-plate {
-  background-color: $color-white;
-  box-shadow: 0px 4px 15px 0px #0000001A;
-  border-radius: 15px;
-  padding: 1px 13px;
-  margin-bottom: 12px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-
-  h3 {
-    margin-bottom: 0;
-    margin-top: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .txt {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-      font-size: 15px;
-      font-weight: 300;
-      margin-top: 5px;
-      margin-bottom: 12px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-
-    span {  /*-------------- prix ---*/
-      font-weight: 700;
-      font-size: 16px;
-      padding: 0 8px;
-
-      
-      &::after {  /*-- --------check icone vert --*/
-        font-family: "Font Awesome 6 Free";
-        content: "\f058";
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        padding: 26px;
-        top: 0;
-        background-color: $color-terciaire;
-        width: 16px;
-        border-radius: 0px 15px 15px 0px;
-      }
-    }
-  }
-}
+/*-------apparition des groupes "entrees plats desserts" progressives ----*/
 
 @keyframes apparition {
   0% {
@@ -125,6 +70,8 @@
   animation: apparition 5s ease-in-out forwards;
 }
 
+/*----------------- bouton cta degradé pour la page menus-----------*/
+
 .menu {
   .btn-gradient {
     display: block;
@@ -132,14 +79,15 @@
     margin-top: 60px;
     transform: translateY(20px);
   }
+}
 
-  .fond-marge {
-    border: 0;
-    height: 40px;
-    background-color: $bg-color;
-    opacity: 1;
-    transform: translateY(40px);
-  }
+/*----------------- marge de fond -----------*/
+.fond-marge { /*- compense la remontée du "menu" sur l'image -*/
+  border: 0;
+  height: 40px;
+  background-color: $bg-color;
+  opacity: 1;
+  transform: translateY(40px);
 }
 
 /*++++++++++++++++++++++++ Medias queries pages menus restaurant only DESKTOP ++++++++++++++++++++++++*/

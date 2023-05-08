@@ -148,12 +148,12 @@ h3 {
 /*............................ Medias queries heart only DESKTOP ...................*/
 @media only screen and (min-width: 1100px) {
   .heart:hover::after { /* au survol de l'élément .heart */
-    font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
-    background: linear-gradient(to bottom, #FF79DA, #9356DC); /*fond utilisant la viariable ppour le dégradé*/
-    background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
-    -webkit-background-clip: text; /* de même pour le navigateur chrome */
-    -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
-    transform: scale(1); /* taille de "l'icône colorée" visible */
+    font-weight: 900;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1);
     transition: transform ease-in-out 300ms;
   }
 }
@@ -201,19 +201,71 @@ h3 {
   text-align: center;
 }
 
-.card-plate:focus {
-  caret-color: white;
+/*------------------------ cards select menu ------------------*/
+.card-plate {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  padding: 1px 13px;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden; /* cache le "carré vert annimé"  */
+  cursor: pointer;
+}
+.card-plate h3 {
+  margin-bottom: 0;
+  margin-top: 12px;
+  white-space: nowrap; /* empêche le passage à la ligne  */
+  overflow: hidden; /* cache le texte en débordement */
+  text-overflow: ellipsis; /* ajoute les points de supensions */
+}
+.card-plate .txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-plate .txt p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  white-space: nowrap; /* empêche le passage à la ligne  */
+  overflow: hidden; /* cache le texte en débordement */
+  text-overflow: ellipsis; /* ajoute les points de supensions */
+}
+.card-plate .txt span { /*-------------- prix ------*/
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 8px;
+}
+.card-plate .txt span::after { /*---------check carré vert sans html-----*/
+  font-family: "Font Awesome 6 Free";
+  content: "\f058"; /*---- icone check ----*/
+  color: white; /*-- couleur de l'icone --*/
+  font-size: 20px; /*-- taille de l'icone --*/
+  position: absolute; /*--- sort du flux  ---*/
+  top: 0; /*-- superposition à la card à partir du haut --*/
+  padding: 26px;
+  width: 16px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+}
+
+/*------------- Anim check select -------*/
+.card-plate:focus { /*-- focus pour tenir le click --*/
+  caret-color: white; /*-- cache le curseur  --*/
 }
 .card-plate:focus h3, .card-plate:focus p {
   width: 250px;
 }
 .card-plate:focus .txt span::after {
-  right: 0;
-  transition: 250ms;
+  right: 0; /*-- visible par position sur la card, bord à bord, droite --*/
+  transition: 250ms ease-in-out; /*-- fluidité de la transition --*/
 }
 .card-plate:focus .margin {
   margin-right: 62px;
-  transition: 250ms;
+  transition: 250ms ease-in-out;
 }
 
 .card-plate:not(:focus) {
@@ -221,13 +273,14 @@ h3 {
 }
 .card-plate:not(:focus) .txt span::after {
   right: -68px;
-  transition: 250ms;
+  transition: 250ms ease-in-out;
 }
 .card-plate:not(:focus) .margin {
   margin-right: 0px;
-  transition: 250ms;
+  transition: 250ms ease-in-out;
 }
 
+/*............................ Medias queries card-plate-select only DESKTOP ...................*/
 @media only screen and (min-width: 1100px) {
   .card-plate:focus h3, .card-plate:focus p {
     width: -moz-max-content;
@@ -235,11 +288,11 @@ h3 {
   }
   .card-plate:hover .txt span::after {
     right: 0;
-    transition: 250ms;
+    transition: 250ms ease-in-out;
   }
   .card-plate:hover .margin {
     margin-right: 62px;
-    transition: 250ms;
+    transition: 250ms ease-in-out;
   }
 }
 /*------------------------------------------ loader --------------------------------*/
@@ -382,7 +435,7 @@ footer i {
     justify-content: space-between;
   }
 }
-/****************************************************Page accueil*******************************/
+/*************************************************** Page d'accueil ******************************/
 /*---------------------headline section en tête------*/
 .headline {
   background-color: #F6F6F6;
@@ -457,7 +510,7 @@ h1 {
   color: #9356DC;
 }
 
-/*---------------card restaurants liste----------*/
+/*--------------- restaurants liste cards ---------*/
 .restaurants {
   background-color: #F6F6F6;
   padding-top: 44px;
@@ -496,7 +549,7 @@ h1 {
 
 /*............................ Medias queries home only DESKTOP ...................*/
 @media only screen and (min-width: 1100px) {
-  * .info {
+  .info {
     width: 1080px;
     display: flex;
     justify-content: space-between;
@@ -520,7 +573,7 @@ h1 {
     margin: 0;
   }
 }
-/****************************************************Page des menus*******************************/
+/*************************************************** Page des menus ******************************/
 .image img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -558,56 +611,7 @@ h1 {
   margin: auto;
 }
 
-.card-plate {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
-  border-radius: 15px;
-  padding: 1px 13px;
-  margin-bottom: 12px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-.card-plate h3 {
-  margin-bottom: 0;
-  margin-top: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card-plate .txt {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.card-plate .txt p {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: 5px;
-  margin-bottom: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card-plate .txt span { /*-------------- prix ---*/
-  font-weight: 700;
-  font-size: 16px;
-  padding: 0 8px;
-}
-.card-plate .txt span::after { /*-- --------check icone vert --*/
-  font-family: "Font Awesome 6 Free";
-  content: "\f058";
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 26px;
-  top: 0;
-  background-color: #99E2D0;
-  width: 16px;
-  border-radius: 0px 15px 15px 0px;
-}
-
+/*-------apparition des groupes "entrees plats desserts" progressives ----*/
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -635,13 +639,16 @@ h1 {
   animation: apparition 5s ease-in-out forwards;
 }
 
+/*----------------- bouton cta degradé pour la page menus-----------*/
 .menu .btn-gradient {
   display: block;
   width: 186px;
   margin-top: 60px;
   transform: translateY(20px);
 }
-.menu .fond-marge {
+
+/*----------------- marge de fond -----------*/
+.fond-marge { /*- compense la remontée du "menu" sur l'image -*/
   border: 0;
   height: 40px;
   background-color: #F6F6F6;
@@ -650,7 +657,6 @@ h1 {
 }
 
 /*++++++++++++++++++++++++ Medias queries pages menus restaurant only DESKTOP ++++++++++++++++++++++++*/
-
 @media only screen and (min-width: 1100px) {
   .menu h1 {
     justify-content: center;
