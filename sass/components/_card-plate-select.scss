@@ -33,84 +33,78 @@
         overflow: hidden; /* cache le texte en débordement */
         text-overflow: ellipsis;  /* ajoute les points de supensions */
       }
-  
-      span {  /*-------------- prix ------*/
+
+
+      .margin { /*----- partie à animer -----------*/
+        margin-right: 0px; /*-- prix, place initiale hors click*/
+        transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus --*/
+      }
+
+      span {  /*--------- prix ------*/
         font-weight: 700;
         font-size: 16px;
         padding: 0 8px;
         
-        &::after {  /*---------check carré vert sans html-----*/
+        &::after {  /*-----check carré vert sans html-----*/
           font-family: "Font Awesome 6 Free";
           content: "\f058"; /*---- icone check ----*/
           color: white; /*-- couleur de l'icone --*/
           font-size: 20px; /*-- taille de l'icone --*/
-          position: absolute; /*--- sort du flux  ---*/
+          position: absolute; /*--- réglage de la position dans le parent, hors flux ---*/
           top: 0; /*-- superposition à la card à partir du haut --*/
-          padding: 26px;
+          
+          padding: 26px; /*-- carré vert select--*/
           width: 16px;
           border-radius: 0px 15px 15px 0px;
           background-color: $color-terciaire;
+
+          right: -68px; /*-- carré vert, place initiale hors click (caché à droite) --*/
+          transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus ou du survol --*/
         }
       }
     }
   }
 
-/*------------- Anim check select -------*/
+/*------------- Animation check select au click-------*/
 
 .card-plate:focus { /*-- focus pour tenir le click --*/
-  caret-color: white; /*-- cache le curseur  --*/
-
+  
 & h3, p{
- width: 250px;
+ width: 250px; /*- réduction de la largeur du texte  -*/
 }
-  .txt span::after {
-    right: 0; /*-- visible par position sur la card, bord à bord, droite --*/
-    transition: 250ms ease-in-out; /*-- fluidité de la transition --*/
+  .txt span::after { /*--carré vert select--*/
+    right: 0; /*-- devient visible par superposition du bord droit de la card --*/
+    transition: 250ms ease-in-out; /*-- fluidité de la transition sur focus --*/
   }
 
   .margin {
-    margin-right: 62px;
-    transition: 250ms ease-in-out;
+    margin-right: 62px; /*-- le prix se déplace à gauche --*/
+    transition: 250ms ease-in-out; /*-- fluidité de la transition sur focus--*/
   }
 }
 
-.card-plate:not(:focus) {
-  caret-color: white;
-
-  .txt span::after {
-    right: -68px;
-    transition: 250ms ease-in-out;
-  }
-
-  .margin {
-    margin-right: 0px;
-    transition: 250ms ease-in-out;
-  }
-}
 
 /*............................ Medias queries card-plate-select only DESKTOP ...................*/
 
 @include desktop {
 
   .card-plate:focus {
-    
   
   & h3, p{
    width: max-content;
-  
   }
 }
   
-  .card-plate:hover {
+  .card-plate:hover { /*---- comportement au survol ------*/
 
-    .txt span::after {
-      right: 0;
-      transition: 250ms ease-in-out;
+    .txt span::after { /*--carré vert select--*/
+      right: 0; /*-- devient visible par superposition du bord droit de la card --*/
+      transition: 250ms ease-in-out; /*-- fluidité de la transition au survol --*/
     }
 
     .margin {
-      margin-right: 62px;
-      transition: 250ms ease-in-out;
+      margin-right: 62px; /*-- le prix se déplace à gauche --*/
+      transition: 250ms ease-in-out; /*-- fluidité de la transition au survol --*/
     }
   }
 }

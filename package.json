@@ -1,7 +1,7 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "site “mobile first” qui répertorie les menus de restaurants gastronomiques",
   "main": "index.js",
   "scripts": {
     "compile-sass": "sass sass/style.scss assets/css/style.css"

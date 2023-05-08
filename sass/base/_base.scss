@@ -16,6 +16,7 @@ body {
 
 main {
     width: 100%;
+    caret-color: white; /*-- cache le curseur  --*/
 }
 
 a {
@@ -23,5 +24,7 @@ a {
     color: $bg-grey;
     font-weight: 500;
 }
+
+
 
 

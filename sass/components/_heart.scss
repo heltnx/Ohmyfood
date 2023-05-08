@@ -1,4 +1,4 @@
-/*-------heart -  coeur qui se rempli en degradé de bas en haut-------------------- */
+/*------- heart - coeur qui se rempli en degradé de bas en haut-------------------- */
 
 .heart {
   position: relative;
@@ -12,27 +12,25 @@
     left: 0;
     right: 0;
     bottom: 2px;
-    transform-origin: bottom;    /* définit le depart de l'animation en bas de l'élément */
-  }
-
-  &:active::after {     /* au click de l'élément .heart */
-    font-weight: 900;    /* graisse de police pour remplir le coeur avec de la couleur */
-    background: $gradient; /*fond utilisant la viariable ppour le dégradé*/
-    background-clip: text;    /* pour afficher le fond comme étant la même zone que l'icone */
-    -webkit-background-clip: text; /* de même pour le navigateur chrome */
-    -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
-    transform: scale(1);  /* taille de "l'icône colorée" visible */
-    transition: transform ease-in-out 300ms;
-  }
-
-  &:not(:active)::after  {  /* Style lorsque la souris est retirée */
+ 
     font-weight: 900;   
     background: $gradient;
     background-clip: text; 
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent; 
+    transform-origin: bottom;    /* définit le départ de l'animation en bas de l'élément */
     transform: scale(0); /* taille de "l'icône colorée" invisible */
     transition: transform ease-in-out 2s ; 
+  }
+
+  &:active::after {     /* au click sur l'élément .heart */
+    font-weight: 900;    /* graisse de police pour remplir le coeur avec de la couleur */
+    background: $gradient; /* fond utilisant la viariable ppour le dégradé */
+    background-clip: text;    /* pour afficher le fond comme étant la même zone que l'icone */
+    -webkit-background-clip: text; /* de même pour le navigateur chrome */
+    -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+    transform: scale(1);  /* taille de "l'icône colorée" visible */
+    transition: transform ease-in-out 150ms; /* fluidité de la transition */
   }
 }
 

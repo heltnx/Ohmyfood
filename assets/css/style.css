@@ -23,6 +23,7 @@ body {
 
 main {
   width: 100%;
+  caret-color: white; /*-- cache le curseur  --*/
 }
 
 a {
@@ -111,7 +112,7 @@ h3 {
   margin-right: 27px;
 }
 
-/*-------heart -  coeur qui se rempli en degradé de bas en haut-------------------- */
+/*------- heart - coeur qui se rempli en degradé de bas en haut-------------------- */
 .heart {
   position: relative;
   cursor: pointer;
@@ -124,25 +125,23 @@ h3 {
   left: 0;
   right: 0;
   bottom: 2px;
-  transform-origin: bottom; /* définit le depart de l'animation en bas de l'élément */
-}
-.heart:active::after { /* au click de l'élément .heart */
-  font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
-  background: linear-gradient(to bottom, #FF79DA, #9356DC); /*fond utilisant la viariable ppour le dégradé*/
-  background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
-  -webkit-background-clip: text; /* de même pour le navigateur chrome */
-  -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
-  transform: scale(1); /* taille de "l'icône colorée" visible */
-  transition: transform ease-in-out 300ms;
-}
-.heart:not(:active)::after { /* Style lorsque la souris est retirée */
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transform-origin: bottom; /* définit le départ de l'animation en bas de l'élément */
   transform: scale(0); /* taille de "l'icône colorée" invisible */
   transition: transform ease-in-out 2s;
+}
+.heart:active::after { /* au click sur l'élément .heart */
+  font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
+  background: linear-gradient(to bottom, #FF79DA, #9356DC); /* fond utilisant la viariable ppour le dégradé */
+  background-clip: text; /* pour afficher le fond comme étant la même zone que l'icone */
+  -webkit-background-clip: text; /* de même pour le navigateur chrome */
+  -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+  transform: scale(1); /* taille de "l'icône colorée" visible */
+  transition: transform ease-in-out 150ms; /* fluidité de la transition */
 }
 
 /*............................ Medias queries heart only DESKTOP ...................*/
@@ -234,50 +233,42 @@ h3 {
   overflow: hidden; /* cache le texte en débordement */
   text-overflow: ellipsis; /* ajoute les points de supensions */
 }
-.card-plate .txt span { /*-------------- prix ------*/
+.card-plate .txt .margin { /*----- partie à animer -----------*/
+  margin-right: 0px; /*-- prix, place initiale hors click*/
+  transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus --*/
+}
+.card-plate .txt span { /*--------- prix ------*/
   font-weight: 700;
   font-size: 16px;
   padding: 0 8px;
 }
-.card-plate .txt span::after { /*---------check carré vert sans html-----*/
+.card-plate .txt span::after { /*-----check carré vert sans html-----*/
   font-family: "Font Awesome 6 Free";
   content: "\f058"; /*---- icone check ----*/
   color: white; /*-- couleur de l'icone --*/
   font-size: 20px; /*-- taille de l'icone --*/
-  position: absolute; /*--- sort du flux  ---*/
+  position: absolute; /*--- réglage de la position dans le parent, hors flux ---*/
   top: 0; /*-- superposition à la card à partir du haut --*/
-  padding: 26px;
+  padding: 26px; /*-- carré vert select--*/
   width: 16px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
+  right: -68px; /*-- carré vert, place initiale hors click (caché à droite) --*/
+  transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus ou du survol --*/
 }
 
-/*------------- Anim check select -------*/
-.card-plate:focus { /*-- focus pour tenir le click --*/
-  caret-color: white; /*-- cache le curseur  --*/
-}
+/*------------- Animation check select au click-------*/
+.card-plate:focus { /*-- focus pour tenir le click --*/ }
 .card-plate:focus h3, .card-plate:focus p {
-  width: 250px;
+  width: 250px; /*- réduction de la largeur du texte  -*/
 }
-.card-plate:focus .txt span::after {
-  right: 0; /*-- visible par position sur la card, bord à bord, droite --*/
-  transition: 250ms ease-in-out; /*-- fluidité de la transition --*/
+.card-plate:focus .txt span::after { /*--carré vert select--*/
+  right: 0; /*-- devient visible par superposition du bord droit de la card --*/
+  transition: 250ms ease-in-out; /*-- fluidité de la transition sur focus --*/
 }
 .card-plate:focus .margin {
-  margin-right: 62px;
-  transition: 250ms ease-in-out;
-}
-
-.card-plate:not(:focus) {
-  caret-color: white;
-}
-.card-plate:not(:focus) .txt span::after {
-  right: -68px;
-  transition: 250ms ease-in-out;
-}
-.card-plate:not(:focus) .margin {
-  margin-right: 0px;
-  transition: 250ms ease-in-out;
+  margin-right: 62px; /*-- le prix se déplace à gauche --*/
+  transition: 250ms ease-in-out; /*-- fluidité de la transition sur focus--*/
 }
 
 /*............................ Medias queries card-plate-select only DESKTOP ...................*/
@@ -286,13 +277,14 @@ h3 {
     width: -moz-max-content;
     width: max-content;
   }
-  .card-plate:hover .txt span::after {
-    right: 0;
-    transition: 250ms ease-in-out;
+  .card-plate:hover { /*---- comportement au survol ------*/ }
+  .card-plate:hover .txt span::after { /*--carré vert select--*/
+    right: 0; /*-- devient visible par superposition du bord droit de la card --*/
+    transition: 250ms ease-in-out; /*-- fluidité de la transition au survol --*/
   }
   .card-plate:hover .margin {
-    margin-right: 62px;
-    transition: 250ms ease-in-out;
+    margin-right: 62px; /*-- le prix se déplace à gauche --*/
+    transition: 250ms ease-in-out; /*-- fluidité de la transition au survol --*/
   }
 }
 /*------------------------------------------ loader --------------------------------*/
