@@ -73,12 +73,12 @@ h3 {
   background: linear-gradient(to bottom, #FF79DA, #9356DC); /* definit la couleur de fond dégradée du bouton */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363); /* ombre portée du bouton */
   opacity: 1; /* rend le bouton pleinement visible lors du laché du survol */
-  transition: opacity 600ms ease-in-out; /* fluidité de la transition */
+  transition: opacity 400ms ease-in-out; /* fluidité de la transition */
 }
 .btn-gradient:hover { /*---- au survol de l'élément .heart */
   box-shadow: 0px 8px 12px rgba(0, 0, 5, 0.39); /* ombre portée plus difuse */
   opacity: 0.8; /* rend le bouton légèrement plus clair */
-  transition: 600ms ease-in-out; /* fluidité de la transition */
+  transition: 400ms ease-in-out; /* fluidité de la transition */
 }
 
 /*-----------mixin------ card fonctionnement --------*/
@@ -609,25 +609,25 @@ h1 {
     transform: translateY(20px);
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* pour une transition encore plus fluide */
+    transform: translateY(0); /* positionnement initial  */
   }
 }
 .entrees { /* selection du groupe entrees   */
   padding: 32px 0 0 0;
   opacity: 0;
-  animation: apparition 1s ease-in-out forwards; /* apparait en 1s et reste en place */
+  animation: apparition 700ms ease-in-out 0ms forwards; /* apparait le premier et reste en place */
 }
 
 .plats {
   padding: 40px 0;
   opacity: 0;
-  animation: apparition 1s 3s ease-in-out forwards; /* apparait avec un delay de 3s */
+  animation: apparition 1.5s ease-in-out 600ms forwards; /* apparait avec un delay de 600ms */
 }
 
 .desserts {
   opacity: 0;
-  animation: apparition 1s 6s ease-in-out forwards; /* apparait avec un delay de 6s */
+  animation: apparition 1.5s ease-in-out 1.5s forwards; /* apparait avec un delay de 1.5s */
 }
 
 /*----------------- bouton cta degradé pour la page menus-----------*/

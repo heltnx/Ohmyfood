@@ -48,26 +48,26 @@
   }
 
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* pour une transition encore plus fluide */
+    transform: translateY(0); /* positionnement initial  */
   }
 }
 
 .entrees { /* selection du groupe entrees   */
   padding: 32px 0 0 0;
   opacity: 0;
-  animation: apparition 1s ease-in-out forwards; /* apparait en 1s et reste en place */
+  animation: apparition 700ms ease-in-out 0ms forwards; /* apparait le premier et reste en place */
 }
 
 .plats {
   padding: 40px 0;
   opacity: 0;
-  animation: apparition 1s 3s ease-in-out forwards; /* apparait avec un delay de 3s */
+  animation: apparition 1.5s ease-in-out 600ms forwards; /* apparait avec un delay de 600ms */
 }
 
 .desserts {
   opacity: 0;
-  animation: apparition 1s 6s ease-in-out forwards; /* apparait avec un delay de 6s */
+  animation: apparition 1.5s ease-in-out 1.5s forwards; /* apparait avec un delay de 1.5s */
 }
 
 /*----------------- bouton cta degradé pour la page menus-----------*/

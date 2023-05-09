@@ -20,12 +20,12 @@
 	background: $gradient; /* definit la couleur de fond dégradée du bouton */ 
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363); /* ombre portée du bouton */
 	opacity: 1; /* rend le bouton pleinement visible lors du laché du survol */
-	transition: opacity 600ms ease-in-out; /* fluidité de la transition */
+	transition: opacity 400ms ease-in-out; /* fluidité de la transition */
 
 	&:hover {  /*---- au survol de l'élément .heart */
 		box-shadow: 0px 8px 12px rgba(0, 0, 5, 0.39); /* ombre portée plus difuse */
 		opacity: 0.8;  /* rend le bouton légèrement plus clair */
-		transition:  600ms ease-in-out; /* fluidité de la transition */
+		transition:  400ms ease-in-out; /* fluidité de la transition */
 	}
 }
 
