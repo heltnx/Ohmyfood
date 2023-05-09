@@ -53,21 +53,21 @@
   }
 }
 
-.entrees {
+.entrees { /* selection du groupe entrees   */
   padding: 32px 0 0 0;
   opacity: 0;
-  animation: apparition 1s ease-in-out forwards;
+  animation: apparition 1s ease-in-out forwards; /* apparait en 1s et reste en place */
 }
 
 .plats {
   padding: 40px 0;
   opacity: 0;
-  animation: apparition 3s ease-in-out forwards;
+  animation: apparition 1s 3s ease-in-out forwards; /* apparait avec un delay de 3s */
 }
 
 .desserts {
   opacity: 0;
-  animation: apparition 5s ease-in-out forwards;
+  animation: apparition 1s 6s ease-in-out forwards; /* apparait avec un delay de 6s */
 }
 
 /*----------------- bouton cta degradé pour la page menus-----------*/
