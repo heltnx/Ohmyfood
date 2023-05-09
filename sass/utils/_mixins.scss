@@ -43,8 +43,7 @@
 
 	span {
 		position: relative;
-		left: -18px;
-		top: 4px;
+		transform: translateX(-18px);
 		border-radius: 50%;
 		background-color: $color-primary;
 		padding: 6px 12px;

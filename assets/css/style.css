@@ -94,8 +94,7 @@ h3 {
 }
 .instructions span {
   position: relative;
-  left: -18px;
-  top: 4px;
+  transform: translateX(-18px);
   border-radius: 50%;
   background-color: #9356DC;
   padding: 6px 12px;
@@ -480,8 +479,7 @@ h1 {
 }
 .instruction span {
   position: relative;
-  left: -18px;
-  top: 4px;
+  transform: translateX(-18px);
   border-radius: 50%;
   background-color: #9356DC;
   padding: 6px 12px;
