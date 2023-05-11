@@ -7,47 +7,36 @@
   &::after {    /* ajoute un élément de contenu après l'élément .heart */
     content: "\f004";    /* icône de cœur de Font Awesome */
     font-family: "Font Awesome 6 Free";
-    position: absolute;
+    position: absolute; /* positione l'icone au dessus de "heart before" */
     top: 0;
     left: 0;
     right: 0;
     bottom: 2px;
- 
-    font-weight: 900;   
-    background: $gradient;
-    background-clip: text; 
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent; 
+    font-weight: 900;  /* graisse de police pour remplir le coeur avec de la couleur */
+    background: $gradient; /* fond utilisant la viariable ppour le dégradé */
+    background-clip: text; /* affiche le fond comme étant la même zone que l'icone */
+    -webkit-background-clip: text;  /* de même pour le navigateur chrome */
+    -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
     transform-origin: bottom;    /* définit le départ de l'animation en bas de l'élément */
     transform: scale(0); /* taille de "l'icône colorée" invisible */
-    transition: transform ease-in-out 2s ; 
+    transition:  ease-in-out 350ms ; /* fluidité de la transition */
   }
 
-  &:active::after {     /* au click sur l'élément .heart */
-    font-weight: 900;    /* graisse de police pour remplir le coeur avec de la couleur */
-    background: $gradient; /* fond utilisant la viariable ppour le dégradé */
-    background-clip: text;    /* pour afficher le fond comme étant la même zone que l'icone */
-    -webkit-background-clip: text; /* de même pour le navigateur chrome */
-    -webkit-text-fill-color: transparent;  /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+  &:focus::after{     /* au click sur l'élément focus sur "heart plein" */
     transform: scale(1);  /* taille de "l'icône colorée" visible */
-    transition: transform ease-in-out 150ms; /* fluidité de la transition */
+    transition:  ease-in-out 350ms ; /* fluidité de la transition */
   }
 }
+
 
 /*............................ Medias queries heart only DESKTOP ...................*/
 
 @include desktop {
 
   .heart {
-
     &:hover::after {  /* au survol de l'élément .heart */
-      font-weight: 900;  
-      background: $gradient;
-      background-clip: text;   
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
       transform: scale(1); 
-      transition: transform ease-in-out 300ms;
+      transition: transform ease-in-out 350ms;
     }
   }
 }
