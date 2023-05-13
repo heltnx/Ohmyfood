@@ -127,10 +127,10 @@ h3 {
   right: 0;
   bottom: 2px;
   font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
-  background: linear-gradient(to bottom, #FF79DA, #9356DC); /* fond utilisant la viariable ppour le dégradé */
+  background: linear-gradient(to bottom, #FF79DA, #9356DC); /* fond utilisant la viariable pour le dégradé */
   background-clip: text; /* affiche le fond comme étant la même zone que l'icone */
   -webkit-background-clip: text; /* de même pour le navigateur chrome */
-  -webkit-text-fill-color: transparent; /* pour que l'icone initiale laisse apparaître le dégradé de fond */
+  -webkit-text-fill-color: transparent; /* pour que l'icone laisse apparaître le dégradé de fond */
   transform-origin: bottom; /* définit le départ de l'animation en bas de l'élément */
   transform: scale(0); /* taille de "l'icône colorée" invisible */
   transition: ease-in-out 350ms; /* fluidité de la transition */
