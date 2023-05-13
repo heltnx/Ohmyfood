@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* break point - (les 3 card "fonctionnement" ne passent plus en ligne)*/
 /* ------------------mise en forme column avec flex box--------------------  */
 .fonctionnement, .headline, .loader-contain, .card .card, .main-container {
   display: flex;
