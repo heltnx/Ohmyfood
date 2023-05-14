@@ -44,10 +44,6 @@
     padding-bottom: 68px;
   }
 
-  .instruction {
-    @include instructions;
-  }
-
   .store {
     i {
       color: $color-primary;
@@ -91,6 +87,19 @@
     position: relative;
     max-width: 500px;
   }
+
+.heart-home{
+    &:hover::after {  /* au survol de l'élément .heart pour les card home*/
+    font-weight: 900;  
+    background: linear-gradient(to top, $color-secondary, $color-primary); /* fond dégradé inversé */
+    background-clip: text;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    transform: scale(1); 
+    transition: transform ease-in-out 300ms;
+  }
+}
+
 
 /*............................ Medias queries home only DESKTOP ...................*/
 
