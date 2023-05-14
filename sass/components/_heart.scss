@@ -13,7 +13,7 @@
     right: 0;
     bottom: 2px;
     font-weight: 900;  /* graisse de police pour remplir le coeur avec de la couleur */
-    background: $gradient; /* fond utilisant la viariable pour le dégradé */
+    background: linear-gradient(to top, $color-secondary, $color-primary); /* fond dégradé inversé */
     background-clip: text; /* affiche le fond comme étant la même zone que l'icone */
     -webkit-background-clip: text;  /* de même pour le navigateur chrome */
     -webkit-text-fill-color: transparent;  /* pour que l'icone laisse apparaître le dégradé de fond */

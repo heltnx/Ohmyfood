@@ -127,7 +127,7 @@ h3 {
   right: 0;
   bottom: 2px;
   font-weight: 900; /* graisse de police pour remplir le coeur avec de la couleur */
-  background: linear-gradient(to bottom, #FF79DA, #9356DC); /* fond utilisant la viariable pour le dégradé */
+  background: linear-gradient(to top, #FF79DA, #9356DC); /* fond dégradé inversé */
   background-clip: text; /* affiche le fond comme étant la même zone que l'icone */
   -webkit-background-clip: text; /* de même pour le navigateur chrome */
   -webkit-text-fill-color: transparent; /* pour que l'icone laisse apparaître le dégradé de fond */
@@ -522,16 +522,6 @@ h1 {
   margin-bottom: 20px;
   position: relative;
   max-width: 500px;
-}
-
-.heart-home:hover::after { /* au survol de l'élément .heart */
-  font-weight: 900;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(1);
-  transition: transform ease-in-out 300ms;
 }
 
 /*............................ Medias queries home only DESKTOP ...................*/
