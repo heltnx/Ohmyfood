@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* break point - (les 3 card "fonctionnement" ne passent plus en ligne)*/
 /* ------------------mise en forme column avec flex box--------------------  */
-.fonctionnement, .headline, .loader-contain, .card .card, .main-container {
+.fonctionnement, .headline, .loader-contain, .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +77,7 @@ h3 {
   transition: opacity 400ms ease-in-out; /* fluidité de la transition */
 }
 .btn-gradient:hover { /*---- au survol de l'élément .heart */
-  box-shadow: 0px 8px 12px rgba(0, 0, 5, 0.39); /* ombre portée plus difuse */
+  box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.39); /* ombre portée plus difuse */
   opacity: 0.8; /* rend le bouton légèrement plus clair */
   transition: 400ms ease-in-out; /* fluidité de la transition */
 }
@@ -528,6 +528,7 @@ h1 {
   .card {
     width: 46%;
     margin: 0;
+    padding-bottom: 30px;
   }
 }
 /*************************************************** Page des menus ******************************/
