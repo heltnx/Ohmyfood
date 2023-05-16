@@ -37,7 +37,7 @@
 
       .margin { /*----- partie à animer -----------*/
         margin-right: 0px; /*-- prix, place initiale hors click*/
-        transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus --*/
+        transition: 250ms ease-in-out; /*-- fluidité pour la sortie du suvol --*/
       }
 
       span {  /*--------- prix ------*/
@@ -59,7 +59,7 @@
           background-color: $color-terciaire;
 
           right: -68px; /*-- carré vert, place initiale hors click (caché à droite) --*/
-          transition: 250ms ease-in-out; /*-- fluidité pour la sortie du focus ou du survol --*/
+          transition: 250ms ease-in-out; /*-- fluidité pour la sortie du survol --*/
         }
       }
     }
